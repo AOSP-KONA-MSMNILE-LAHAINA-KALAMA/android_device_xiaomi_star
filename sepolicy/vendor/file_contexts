@@ -11,6 +11,9 @@
 # Camera
 /mnt/vendor/persist/camera(/.*)?   u:object_r:camera_persist_file:s0
 
+# Display
+/sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_exposure               u:object_r:sysfs_dm:s0
+
 # IR
 /dev/ir_spi                                      u:object_r:ir_spi_device:s0
 

@@ -122,6 +122,10 @@ on boot
     # Set thermal mode to evaluation
     write /sys/class/thermal/thermal_message/sconfig 10
 
+    # FlickerFree permission
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_exposure
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_exposure
+
     # Set xiaomi touch permissions
     chown system system /dev/xiaomi-touch
     chmod 0660 /dev/xiaomi-touch
