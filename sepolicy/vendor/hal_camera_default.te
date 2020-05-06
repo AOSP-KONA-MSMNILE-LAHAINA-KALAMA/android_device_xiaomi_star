@@ -14,4 +14,6 @@ allow hal_camera_default mnt_vendor_file:dir { search };
 
 allow hal_camera_default stmvl53l5_device:chr_file { ioctl read write open };
 
+allow hal_camera_default public_adsprpcd_file:file r_file_perms;
+
 vendor_public_prop(vendor_camera_sensor_prop)
