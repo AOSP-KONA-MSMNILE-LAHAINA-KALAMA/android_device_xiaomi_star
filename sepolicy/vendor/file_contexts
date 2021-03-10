@@ -22,6 +22,9 @@
 # Laser autofocus
 /dev/stmvl53l5                                    u:object_r:stmvl53l5_device:s0
 
+# Livedisplay
+/vendor/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.star        u:object_r:hal_lineage_livedisplay_qti_exec:s0
+
 # Mlipay
 /(vendor|system/vendor)/bin/mlipayd@1.1          u:object_r:hal_mlipay_default_exec:s0
 
