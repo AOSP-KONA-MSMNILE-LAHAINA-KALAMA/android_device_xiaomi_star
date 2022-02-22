@@ -22,7 +22,22 @@
 
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
+#include <cutils/properties.h>
+#include <string.h>
 
+inline const char* BtmGetDefaultName()
+{
+	char sku[PROPERTY_VALUE_MAX];
+	property_get("ro.boot.product.hardware.sku", sku, "");
+
+        if (!strcmp("mars", sku)) {
+		return "Mi 11 Pro";
+        } else {
+		return "Mi 11 Ultra";
+	}
+}
+
+#define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
 // Disables read remote device feature
 #define MAX_ACL_CONNECTIONS   16
 #define MAX_L2CAP_CHANNELS    32
