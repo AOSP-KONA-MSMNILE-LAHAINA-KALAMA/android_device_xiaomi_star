@@ -35,5 +35,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Touchscreen firmware
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/firmware/st_fts_k2.ftb:$(TARGET_COPY_OUT_VENDOR)/firmware/st_fts_k2.ftb \
+    $(LOCAL_PATH)/firmware/st_fts_k2_htp.ftb:$(TARGET_COPY_OUT_VENDOR)/firmware/st_fts_k2_htp.ftb
+
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/xiaomi/mars/mars-vendor.mk)
