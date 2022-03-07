@@ -19,7 +19,12 @@ TARGET_SCREEN_DENSITY := 560
 TARGET_KERNEL_CONFIG := vendor/mars_defconfig
 
 # Kernel modules
+BOOT_KERNEL_MODULES := \
+    fts_touch_spi.ko \
+    hwid.ko
+
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 
 # Partitions
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
