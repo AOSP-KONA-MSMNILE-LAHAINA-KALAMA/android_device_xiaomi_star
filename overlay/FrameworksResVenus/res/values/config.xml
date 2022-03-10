@@ -405,6 +405,11 @@
          that can be set by the user. -->
     <integer name="config_screenBrightnessDoze">17</integer>
 
+    <!-- Screen brightness used to dim the screen when the user activity
+         timeout expires.  May be less than the minimum allowed brightness setting
+         that can be set by the user. -->
+    <integer name="config_screenBrightnessDim">13</integer>
+
     <!-- Height of the status bar in portrait -->
     <dimen name="status_bar_height_portrait">137px</dimen>
 
