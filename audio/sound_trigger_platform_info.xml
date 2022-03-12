@@ -89,7 +89,7 @@
         <param out_channels="1"/> <!-- Module output channels -->
         <param dam_token_id="1"/>
         <param kw_start_tolerance="360"/>
-        <param kw_end_tolerance="240"/>
+        <param kw_end_tolerance="140"/>
 
         <arm_ss_usecase>
             <!-- Options are "KEYWORD_DETECTION", "USER_VERIFICATION", "CUSTOM_DETECTION"  -->
@@ -208,8 +208,8 @@
         </lsm_usecase>
         <lsm_usecase>
             <param capture_device="HEADSET" />
-            <param adm_cfg_profile="DEFAULT" />
-            <param fluence_type="NONE" />
+            <param adm_cfg_profile="FFECNS" />
+            <param fluence_type="FLUENCE_MIC" />
             <param execution_mode="ADSP" />
             <param app_type="2" /> <!-- app type used in ACDB -->
             <param pdk5_app_type="5" />
@@ -376,8 +376,8 @@
         </lsm_usecase>
         <lsm_usecase>
             <param capture_device="HEADSET" />
-            <param adm_cfg_profile="DEFAULT" />
-            <param fluence_type="NONE" />
+            <param adm_cfg_profile="FFECNS" />
+            <param fluence_type="FLUENCE_MIC" />
             <param execution_mode="ADSP" />
             <param app_type="2" /> <!-- app type used in ACDB -->
             <param pdk5_app_type="5" />
@@ -544,8 +544,8 @@
         </lsm_usecase>
         <lsm_usecase>
             <param capture_device="HEADSET" />
-            <param adm_cfg_profile="DEFAULT" />
-            <param fluence_type="NONE" />
+            <param adm_cfg_profile="FFECNS" />
+            <param fluence_type="FLUENCE_MIC" />
             <param execution_mode="ADSP" />
             <param app_type="2" /> <!-- app type used in ACDB -->
             <param pdk5_app_type="5" />
@@ -792,7 +792,7 @@
         <param app_type="69947" />
         <param sample_rate="16000" />
         <param bit_width="16" />
-        <param out_channels="2"/>
+        <param out_channels="3"/>
     </adm_config>
 
     <adm_config>
