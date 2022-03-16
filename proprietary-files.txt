@@ -120,6 +120,7 @@ vendor/lib/libresampler.so
 vendor/lib/libsndmonitor.so
 vendor/lib/libspkrprot.so
 vendor/lib/libssrec.so
+vendor/lib/libvideoNS.so
 
 # Camera
 vendor/lib64/camera/com.qti.eeprom.mars_ofilm_ov13b10_p24c64f_ultra_eeprom.so
@@ -554,8 +555,12 @@ vendor/lib64/libcom.xiaomi.grallocutils.so
 vendor/lib64/libcom.xiaomi.metadatautils.so
 vendor/lib64/libcom.xiaomi.pluginutils.so
 vendor/lib64/libmiai_deblur.so
+vendor/lib64/libmiStereoFactoryRemapBasicLib.so
+vendor/lib64/libmiStereoFactoryRemapLib.so
+vendor/lib64/libmiStereoFactoryRemapLib_v2.so
 vendor/lib64/librelight_only.so
 vendor/lib64/libsupermoon.so
+vendor/lib64/libXMFace.so
 
 # Camera-firmware
 vendor/firmware/CAMERA_ICP.elf
@@ -865,8 +870,10 @@ vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-video.conf
 
 # ToF sensor
+vendor/lib/libprotobuf-cpp-full-vendor-3.9.1.so
 vendor/lib/vl53l5.hal@1.0.so
 vendor/lib/vl53l5.hal@2.0.so
+vendor/lib64/libprotobuf-cpp-full-vendor-3.9.1.so
 vendor/lib64/vl53l5.hal@1.0.so
 vendor/lib64/vl53l5.hal@2.0.so
 
