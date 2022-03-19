@@ -50,7 +50,8 @@
     <ctl name="RCV DRE DRE Switch" value="0" />
     <ctl name="RCV PCM Source" value="None" />
     <ctl name="RCV PCM Soft Ramp" value="4ms" />
-    <ctl name="RCV AMP PCM Gain" value="3" />
+    <ctl name="RCV AMP PCM Gain" value="18" />
+    <ctl name="RCV Digital PCM Volume" value="697" />
     <ctl name="RCV DSP Block Bypass" value="Off" />
     <ctl name="RCV ASP TX1 Source" value="Zero" />
     <ctl name="RCV ASP TX2 Source" value="Zero" />
@@ -922,6 +923,7 @@
        <ctl name="ASPRX1 Slot Position" value="1" />
        <ctl name="ASPTX Ref" value="Ref" />
        <ctl name="RCV AMP PCM Gain" value="18" />
+       <ctl name="RCV Digital PCM Volume" value="817" />
        <ctl name="RCV DSP RX1 Source" value="ASPRX1" />
        <ctl name="RCV ASP TX1 Source" value="DSPTX1" />
        <ctl name="RCV ASPRX1 Slot Position" value="0" />
@@ -947,6 +949,7 @@
        <ctl name="RCV ASPRX1 Slot Position" value="0" />
        <ctl name="PCM Source" value="None" />
        <ctl name="RCV AMP PCM Gain" value="18" />
+       <ctl name="RCV Digital PCM Volume" value="817" />
        <ctl name="RCV PCM Source" value="DSP" />
        <ctl name="RCV ASPTX Ref" value="Ref" />
     </path>
@@ -965,7 +968,8 @@
 
     <path name="voice-speaker-stereo">
         <path name="speaker" />
-        <ctl name="RCV AMP PCM Gain" value="12" />
+        <ctl name="RCV AMP PCM Gain" value="18" />
+        <ctl name="RCV Digital PCM Volume" value="769" />
         <ctl name="Fast Use Case Delta File" value="spk1_voice_delta.txt"/>
         <ctl name="RCV Fast Use Case Delta File" value="spk2_voice_delta.txt"/>
     </path>
@@ -982,6 +986,7 @@
         <ctl name="RCV ASPTX Ref" value="Ref" />
         <ctl name="RCV PCM Source" value="DSP" />
         <ctl name="RCV AMP PCM Gain" value="3" />
+        <ctl name="RCV Digital PCM Volume" value="697" />
         <ctl name="Cirrus SP Usecase Config" value="None" />
         <ctl name="RCV Fast Use Case Delta File" value="rcv_voice_delta.txt"/>
     </path>
@@ -1088,6 +1093,23 @@
         <ctl name="ADC4_MIXER Switch" value="1" />
         <ctl name="ADC1 Volume" value="12" />
         <ctl name="ADC4 Volume" value="12" />
+    </path>
+
+    <path name="spkrid-mic">
+        <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX1" value="SWR_MIC4" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX0" value="SWR_MIC9" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC4 MUX" value="INP5" />
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
     </path>
 
     <!-- Dual MIC devices -->

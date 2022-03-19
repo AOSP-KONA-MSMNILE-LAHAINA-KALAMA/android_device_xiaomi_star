@@ -172,7 +172,11 @@
         <device name="SND_DEVICE_IN_VOICE_REC_HEADSET_MIC" acdb_id="10008"/>
         <device name="SND_DEVICE_IN_VOICE_REC_DMIC_STEREO" acdb_id="4"/>
         <device name="SND_DEVICE_IN_VOICE_HEARING_AID" acdb_id="11"/>
-        <device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" acdb_id="7"/>
+	<device name="SND_DEVICE_OUT_VOICE_HANDSET_TMUS" acdb_id="7"/>
+        <device name="SND_DEVICE_IN_REALIME_LOOPBACK_MIC_CB" acdb_id="20000"/>
+        <device name="SND_DEVICE_IN_REALIME_LOOPBACK_USB_MIC_CB" acdb_id="20000"/>
+        <device name="SND_DEVICE_OUT_HEADPHONES_KARA_CB" acdb_id="20001"/>
+        <device name="SND_DEVICE_OUT_USB_HEADSET_KARA_CB" acdb_id="20001"/>
     </acdb_ids>
     <backend_names>
         <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
@@ -201,6 +205,7 @@
         <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES_HIFI_FILTER" backend="speaker-and-headphones" interface="TERT_TDM_RX_0-and-RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AND_LINE" backend="speaker-and-headphones" interface="TERT_TDM_RX_0-and-RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_SPEAKER_AND_ANC_HEADSET" backend="speaker-and-headphones" interface="TERT_TDM_RX_0-and-RX_CDC_DMA_RX_0"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_USB_HEADSET" backend="speaker-and-usb-headphones" interface="TERT_TDM_RX_0-and-USB_AUDIO_RX"/>
         <device name="SND_DEVICE_OUT_VOICE_HEADPHONES" backend="headphones" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_HEADSET" backend="headset" interface="RX_CDC_DMA_RX_0"/>
         <device name="SND_DEVICE_OUT_VOICE_ANC_HEADSET" backend="headphones" interface="RX_CDC_DMA_RX_0"/>

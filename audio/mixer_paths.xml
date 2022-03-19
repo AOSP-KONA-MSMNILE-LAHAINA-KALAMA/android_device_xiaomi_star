@@ -190,10 +190,10 @@
     <ctl name="VI_FEED_TX Channels" value="Two" />
     <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_1" value="0" />
     <ctl name="WSA_AIF_VI Mixer WSA_SPKR_VI_2" value="0" />
-    <ctl name="WSA_CDC_DMA_RX_0 Format" value="UNPACKED" />
-    <ctl name="WSA_CDC_DMA_TX_0 Format" value="UNPACKED" />
-    <ctl name="RX_CDC_DMA_RX_0 Format" value="UNPACKED" />
-    <ctl name="TX_CDC_DMA_TX_3 Format" value="UNPACKED" />
+    <ctl name="WSA_CDC_DMA_RX_0 Format" value="S16_LE" />
+    <ctl name="WSA_CDC_DMA_TX_0 Format" value="S16_LE" />
+    <ctl name="RX_CDC_DMA_RX_0 Format" value="S16_LE" />
+    <ctl name="TX_CDC_DMA_TX_3 Format" value="S16_LE" />
     <ctl name="WSA_CDC_DMA_TX_0 SampleRate" value="KHZ_48" />
     <!-- HFP start -->
     <ctl name="HFP_SLIM7_UL_HL Switch" value="0" />
@@ -2030,6 +2030,10 @@
         <ctl name="MultiMedia1 Mixer SLIM_7_TX" value="1" />
     </path>
 
+    <path name="audio-record bt-a2dp-cap">
+        <ctl name="MultiMedia1 Mixer SLIM_7_TX" value="1" />
+    </path>
+
     <path name="audio-record bt-sco-wb">
         <path name="audio-record bt-sco" />
     </path>
@@ -2051,6 +2055,10 @@
     </path>
 
     <path name="audio-record-compress bt-sco">
+        <ctl name="MultiMedia8 Mixer SLIM_7_TX" value="1" />
+    </path>
+
+    <path name="audio-record-compress bt-a2dp-cap">
         <ctl name="MultiMedia8 Mixer SLIM_7_TX" value="1" />
     </path>
 
@@ -2078,6 +2086,10 @@
         <ctl name="MultiMedia17 Mixer SLIM_7_TX" value="1" />
     </path>
 
+    <path name="audio-record-compress2 bt-a2dp-cap">
+        <ctl name="MultiMedia17 Mixer SLIM_7_TX" value="1" />
+    </path>
+
     <path name="audio-record-compress2 bt-sco-wb">
         <path name="audio-record-compress2 bt-sco" />
     </path>
@@ -2100,6 +2112,10 @@
 
     <path name="low-latency-record bt-sco">
       <ctl name="MultiMedia8 Mixer SLIM_7_TX" value="1" />
+    </path>
+
+    <path name="low-latency-record bt-a2dp-cap">
+        <ctl name="MultiMedia8 Mixer SLIM_7_TX" value="1" />
     </path>
 
     <path name="low-latency-record bt-sco-wb">
@@ -3466,6 +3482,9 @@
     <path name="afe-proxy">
     </path>
 
+    <path name="afe-proxy-record">
+    </path>
+
     <path name="display-port">
     </path>
 
@@ -3539,6 +3558,25 @@
         <ctl name="ADC4 ChMap" value="SWRM_TX1_CH4" />
         <ctl name="ADC4_MIXER Switch" value="1" />
         <ctl name="ADC4 MUX" value="INP5" />
+        <ctl name="ADC1 Volume" value="6" />
+        <ctl name="ADC4 Volume" value="6" />
+    </path>
+
+    <path name="spkrid-mic">
+        <ctl name="TX_CDC_DMA_TX_3 Channels" value="Two" />
+        <ctl name="TX_AIF1_CAP Mixer DEC1" value="1" />
+        <ctl name="TX DEC1 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX1" value="SWR_MIC9" />
+        <ctl name="TX_AIF1_CAP Mixer DEC0" value="1" />
+        <ctl name="TX DEC0 MUX" value="SWR_MIC" />
+        <ctl name="TX SMIC MUX0" value="SWR_MIC4" />
+        <ctl name="TX0 MODE" value="ADC_LP" />
+        <ctl name="ADC1 ChMap" value="SWRM_TX2_CH1" />
+        <ctl name="ADC1_MIXER Switch" value="1" />
+        <ctl name="ADC4 ChMap" value="SWRM_TX3_CH2" />
+        <ctl name="ADC4 MUX" value="INP5" />
+        <ctl name="TX3 MODE" value="ADC_LP" />
+        <ctl name="ADC4_MIXER Switch" value="1" />
         <ctl name="ADC1 Volume" value="6" />
         <ctl name="ADC4 Volume" value="6" />
     </path>
@@ -4096,6 +4134,10 @@
         <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia16" value="1" />
     </path>
 
+    <path name="mmap-playback handset">
+        <ctl name="RX_CDC_DMA_RX_0 Audio Mixer MultiMedia16" value="1" />
+    </path>
+
     <path name="mmap-playback headset">
         <path name="mmap-playback headphones" />
     </path>
@@ -4177,6 +4219,10 @@
 
     <path name="mmap-record bt-sco">
       <ctl name="MultiMedia16 Mixer SLIM_7_TX" value="1" />
+    </path>
+
+    <path name="mmap-record bt-a2dp-cap">
+        <ctl name="MultiMedia16 Mixer SLIM_7_TX" value="1" />
     </path>
 
     <path name="mmap-record bt-sco-wb">
