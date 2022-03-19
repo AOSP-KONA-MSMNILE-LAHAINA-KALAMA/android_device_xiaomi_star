@@ -668,7 +668,6 @@ vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 # Fingerprint dtool
 vendor/bin/hw/vendor.xiaomi.hardware.dtool@1.0-service
 vendor/etc/init/vendor.xiaomi.hardware.dtool@1.0-service.rc
-vendor/lib64/vendor.xiaomi.hardware.dtool@1.0-impl.so
 vendor/lib64/vendor.xiaomi.hardware.dtool@1.0.so
 
 # Graphics firmware
@@ -852,7 +851,6 @@ vendor/etc/thermal-chg-only.conf
 vendor/etc/thermal-class0.conf
 vendor/etc/thermal-engine.conf
 vendor/etc/thermal-india-normal.conf
-vendor/etc/thermal-india-per-normal.conf
 vendor/etc/thermal-k1a-4k.conf
 vendor/etc/thermal-k1a-8k.conf
 vendor/etc/thermal-k1a-camera.conf
@@ -900,4 +898,3 @@ vendor/firmware/st_fts_k2_htp.ftb
 
 # Vibrator firmware
 vendor/firmware/aw8697_haptic.bin
-vendor/firmware/aw8697_rtp_1.bin
