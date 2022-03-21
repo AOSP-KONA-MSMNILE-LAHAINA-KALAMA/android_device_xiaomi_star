@@ -44,7 +44,7 @@ qm1d1b0004.ko
 m88rs6000t.ko
 tda18250.ko
 ir-spi.ko
-qti_battery_charger.ko
+qti_battery_charger_main.ko
 btpower.ko
 bt_fm_slim.ko
 ledtrig-timer.ko
