@@ -1,4 +1,5 @@
 llcc_perfmon.ko
+icnss2.ko
 rdbg.ko
 hwid.ko
 nfc_i2c.ko
@@ -45,12 +46,15 @@ m88rs6000t.ko
 tda18250.ko
 ir-spi.ko
 qti_battery_charger_main.ko
+mi_thermal_interface.ko
 btpower.ko
 bt_fm_slim.ko
+qcom_edac.ko
 ledtrig-timer.ko
 led-class-flash.ko
 leds-qti-flash.ko
 leds-qti-tri-led.ko
+hid-aksys.ko
 wlan.ko
 slimbus.ko
 slimbus-ngd.ko
