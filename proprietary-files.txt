@@ -657,8 +657,6 @@ vendor/etc/mdss_dsi_k2_38_08_0a_mp_dsc_cmd_mi.xml
 vendor/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml
 
 # Fingerprint
-vendor/bin/hw/mfp-daemon
-vendor/etc/init/init.mfp-daemon.rc
 -vendor/etc/vintf/manifest/fod.xml
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.lahaina.so
 vendor/lib64/com.fingerprints.extension@3.0.so
