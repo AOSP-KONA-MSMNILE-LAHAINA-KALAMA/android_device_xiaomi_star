@@ -29,10 +29,10 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-pe
 
 PRODUCT_PACKAGES += \
-    FrameworksResVenus \
+    FrameworksResMars \
     SettingsProviderOverlayMars \
-    SettingsResVenus \
-    SystemUIResVenus
+    SettingsResMars \
+    SystemUIResMars
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
