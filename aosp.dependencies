@@ -1,0 +1,27 @@
+
+[
+ {
+   "repository" : "EcrosoftXiao/vendor_xiaomi",
+   "target_path": "vendor/xiaomi",
+   "branch"     : "twelve",
+   "remote"     : "github"
+ },
+ {
+   "repository" : "EcrosoftXiao/device_xiaomi_sm8350-common",
+   "target_path": "device/xiaomi/sm8350-common",
+   "branch"     : "twelve",
+   "remote"     : "github"
+ },
+ {
+   "repository" : "EcrosoftXiao/kernel_xiaomi_mars",
+   "target_path": "kernel/xiaomi/sm8350",
+   "branch"     : "twelve"
+   "remote"     : "github"
+ },
+ {
+   "repository" : "PixelExperience/hardware_xiaomi",
+   "target_path": "hardware/xiaomi",
+   "branch"     : "twelve"
+   "remote"     : "github"
+ }
+]
