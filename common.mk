@@ -21,13 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Inherit proprietary targets
-$(call inherit-product-if-exists, vendor/xiaomi/sm8350-common/sm8350-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/mars/mars-vendor.mk)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
-
-# Call the proprietary setup
-$(call inherit-product-if-exists, vendor/xiaomi/mars/mars-vendor.mk)
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
