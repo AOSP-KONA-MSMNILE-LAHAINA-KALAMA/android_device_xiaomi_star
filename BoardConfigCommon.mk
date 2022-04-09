@@ -56,10 +56,14 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
 TARGET_USE_QTI_BT_STACK := true
 
 # Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := mars
 TARGET_NO_BOOTLOADER := true
 
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
+
+# Display
+TARGET_SCREEN_DENSITY := 560
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
@@ -81,6 +85,9 @@ DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/hidl/manifest_lineage.xml \
     $(COMMON_PATH)/hidl/manifest_xiaomi.xml
 
+# Include proprietary files
+-include vendor/xiaomi/mars/BoardConfigVendor.mk
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image
@@ -94,6 +101,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc LLVM=1
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350
+TARGET_KERNEL_CONFIG := vendor/mars_defconfig
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
@@ -110,8 +118,19 @@ BOARD_KERNEL_CMDLINE += iptable_raw.raw_before_defrag=1
 BOARD_KERNEL_CMDLINE += ip6table_raw.raw_before_defrag=1
 BOARD_KERNEL_CMDLINE += video=vfb:640x400,bpp=32,memsize=3072000
 
+# Kernel modules
+BOOT_KERNEL_MODULES := \
+    fts_touch_spi.ko \
+    hwid.ko
+
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
+
 # NFC
 TARGET_USES_NQ_NFC := true
+
+# OTA assert
+TARGET_OTA_ASSERT_DEVICE := mars|star
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -119,6 +138,8 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 201326592
 BOARD_SUPER_PARTITION_SIZE := 9126805504
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_USES_METADATA_PARTITION := true
+BOARD_DTBOIMG_PARTITION_SIZE := 25165824
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 114001162240
 
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm system system_ext vendor product
