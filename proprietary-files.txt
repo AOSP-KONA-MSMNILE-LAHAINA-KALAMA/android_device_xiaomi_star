@@ -87,6 +87,23 @@ vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 vendor/lib/rfsa/adsp/misound_res_spk_mars.bin
 
+# Audio configs
+vendor/etc/audio/sku_lahaina/audio_effects.xml
+vendor/etc/audio/sku_shima/audio_effects.xml
+vendor/etc/audio/sku_yupik/audio_effects.xml
+vendor/etc/audio/sku_lahaina/audio_io_policy.conf
+vendor/etc/audio/sku_shima/audio_io_policy.conf
+vendor/etc/audio/sku_yupik/audio_io_policy.conf
+vendor/etc/audio/sku_lahaina/audio_platform_info.xml
+vendor/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml
+vendor/etc/audio/sku_lahaina/mixer_paths.xml
+vendor/etc/audio/sku_lahaina/mixer_paths_overlay_dynamic.xml
+vendor/etc/audio/sku_lahaina/mixer_paths_overlay_static.xml
+vendor/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml
+vendor/etc/audio/sku_lahaina/sound_trigger_platform_info.xml
+vendor/etc/audio_tuning_mixer.txt
+vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml
+
 # Audio firmware
 vendor/firmware/cs35l41-dsp1-diag-revb2.wmfw
 vendor/firmware/cs35l41-dsp1-diag-z-RCV-revb2-mars.bin
