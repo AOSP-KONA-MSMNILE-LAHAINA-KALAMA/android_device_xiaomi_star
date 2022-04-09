@@ -144,28 +144,10 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.0.vendor
 
 # Display
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.mapper@3.0-impl-qti-display \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.display.mapper@2.0.vendor \
-
-PRODUCT_PACKAGES += \
-    vendor.display.config@1.15.vendor \
-    vendor.display.config@2.0.vendor
-
-PRODUCT_PACKAGES += \
-    libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
-    libqdMetaData \
-    libtinyxml \
-    memtrack.default
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
+-include hardware/qcom-caf/sm8350/display/config/display-board.mk
+-include hardware/qcom-caf/sm8350/display/config/display-product.mk
+include vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk
+include vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk
 
 # Display Device Config
 PRODUCT_COPY_FILES += \
@@ -374,6 +356,10 @@ PRODUCT_PACKAGES += \
     SettingsResMars \
     SystemUIResMars
 
+# Platform
+PRODUCT_BOARD_PLATFORM := lahaina
+TARGET_BOARD_PLATFORM := lahaina
+
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -546,5 +532,7 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
+    libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
     libnl \
     libwfdaac_vendor
