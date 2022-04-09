@@ -73,17 +73,17 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 LOC_HIDL_VERSION := 4.0
 
 # HIDL
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/hidl/compatibility_matrix.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(DEVICE_PATH)/hidl/vendor_framework_compatibility_matrix.xml \
-    $(DEVICE_PATH)/hidl/xiaomi_framework_compatibility_matrix.xml \
+    $(DEVICE_PATH)/configs/vintf/vendor_framework_compatibility_matrix.xml \
+    $(DEVICE_PATH)/configs/vintf/xiaomi_framework_compatibility_matrix.xml \
     vendor/aosp/config/device_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
-    $(DEVICE_PATH)/hidl/manifest_lahaina.xml \
-    $(DEVICE_PATH)/hidl/manifest_lineage.xml \
-    $(DEVICE_PATH)/hidl/manifest_xiaomi.xml
+    $(DEVICE_PATH)/configs/vintf/manifest_lahaina.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest_lineage.xml \
+    $(DEVICE_PATH)/configs/vintf/manifest_xiaomi.xml
 
 # Include proprietary files
 -include vendor/xiaomi/mars/BoardConfigVendor.mk
@@ -176,10 +176,10 @@ TARGET_BOARD_PLATFORM := lahaina
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/double_tap"
 
 # Properties
-TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/props/odm.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/props/system_ext.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
