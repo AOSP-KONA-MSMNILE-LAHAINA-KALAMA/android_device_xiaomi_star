@@ -1113,6 +1113,19 @@ vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib64/libmmosal.so
 
+# Media configs
+vendor/etc/media_codecs_vendor_audio.xml
+vendor/etc/media_codecs.xml
+vendor/etc/media_codecs_lahaina.xml
+vendor/etc/media_codecs_performance.xml
+vendor/etc/media_codecs_performance_lahaina.xml
+vendor/etc/media_codecs_system_default_lahaina.xml
+vendor/etc/media_codecs_with_dolby_lahaina.xml
+vendor/etc/media_profiles.xml
+vendor/etc/media_profiles_V1_0.xml
+vendor/etc/media_profiles_lahaina.xml
+vendor/etc/media_profiles_vendor.xml
+
 # Media (Dolby Vision)
 vendor/bin/hw/dolbycodec2
 vendor/etc/dolby_vision.cfg
