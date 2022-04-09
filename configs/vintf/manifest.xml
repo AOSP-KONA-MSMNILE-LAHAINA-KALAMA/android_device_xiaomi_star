@@ -591,4 +591,33 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>MwqemAdapter</instance>
         </interface>
     </hal>
+    <!-- Xiaomi Additions -->
+    <hal format="hidl">
+        <name>android.hardware.ir</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IConsumerIr</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.campostproc</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMiPostProcService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- Lineage Livedisplay -->
+    <hal format="hidl">
+         <name>vendor.lineage.livedisplay</name>
+         <transport>hwbinder</transport>
+         <version>2.0</version>
+         <interface>
+             <name>IPictureAdjustment</name>
+             <instance>default</instance>
+         </interface>
+     </hal>
 </manifest>
