@@ -1,26 +1,26 @@
 Copyright (C) 2022 Pixel Experience
 
-Device configuration for Xiaomi Mi 11 Pro
+Device configuration for Xiaomi MI 11 Ultra
 =========================================
 
-The Xiaomi Mi 11 Pro (codenamed _"mars"_) is a mid-range smartphone from Xiaomi.
+The Xiaomi MI 11 Ultra (codenamed _"star"_) is a high-end smartphone from Xiaomi.
 
-It was released in April 2021.
+It was announced on February 2020. Release date was 29 March 2021.
 
 ## Device specifications
 
 Basic   | Spec Sheet
 -------:|:-------------------------
+SoC     | Qualcomm SDM865 Snapdragon 888
 CPU     | Octa-core (1x2.84 GHz Kryo 680 & 3x2.42 GHz Kryo 680 & 4x1.80 GHz Kryo 680)
-Chipset | Qualcomm SM8350 Snapdragon 888 5G (5 nm)
 GPU     | Adreno 660
-Memory  | 8/12 GB, LPDDR5
-Storage | 128/256 GB, UFS 3.1
-Shipped Android Version | 11
-Battery | Li-Po 5000 mAh, non-removable
-Display | 1440 x 3200 pixels, 6.81 inches (~515 ppi density)
-Camera  | 50 MP main, 8 MP periscope telephoto, 13 MP ultrawide, 20 MP front
+Memory  | 8/12 GB RAM
+Shipped Android Version | 11.0 with MIUI 12
+Storage | 256/512 GB
+Battery | Non-removable Li-Po 5000 mAh battery
+Display | 1440 x 3200 pixels, 20:9 ratio, 6.81 inches, AMOLED, 1B colors, 120Hz, HDR10+, Dolby Vision, 900 nits (HBM), 1700 nits 
+Camera  | 50MP(Primary) 48MP(Ultra-wide) 48MP(Telephoto 5x Optical Zoom)
 
 ## Device picture
 
-![Xiaomi Mi 11 Pro](https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1617008379.90732074.jpg "Xiaomi Mi 11 Pro")
+![Xiaomi MI 11 Ultra ](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-mi11-ultra-5g-k1-1.jpg "Xiaomi MI 11 Ultra")

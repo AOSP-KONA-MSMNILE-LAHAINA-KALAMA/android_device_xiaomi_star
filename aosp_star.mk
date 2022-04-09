@@ -13,10 +13,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_star.mk
+# Inherit from star device
+$(call inherit-product, device/xiaomi/star/lahaina.mk)
 
-COMMON_LUNCH_CHOICES := \
-    aosp_star-user \
-    aosp_star-userdebug \
-    aosp_star-eng
+# Inherit some common PixelExperience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+TARGET_SUPPORTS_QUICK_TAP := true
+
+PRODUCT_NAME := aosp_star
+PRODUCT_DEVICE := star
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Mi 11 Ultra
+PRODUCT_MANUFACTURER := Xiaomi
+
+TARGET_BOOT_ANIMATION_RES := 1440
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

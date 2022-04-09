@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Inherit proprietary targets
-$(call inherit-product-if-exists, vendor/xiaomi/mars/mars-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/star/star-vendor.mk)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
@@ -348,10 +348,10 @@ PRODUCT_PACKAGES += \
     WifiResCommon
 
 PRODUCT_PACKAGES += \
-    FrameworksResMars \
-    SettingsProviderOverlayMars \
-    SettingsResMars \
-    SystemUIResMars
+    FrameworksResStar \
+    SettingsProviderOverlayStar \
+    SettingsResStar \
+    SystemUIResStar
 
 # Platform
 PRODUCT_BOARD_PLATFORM := lahaina

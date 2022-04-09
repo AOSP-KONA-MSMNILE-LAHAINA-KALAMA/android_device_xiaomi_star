@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/mars
+DEVICE_PATH := device/xiaomi/star
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
@@ -56,7 +56,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 TARGET_USE_QTI_BT_STACK := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := mars
+TARGET_BOOTLOADER_BOARD_NAME := star
 TARGET_NO_BOOTLOADER := true
 
 # Camera
@@ -83,7 +83,7 @@ DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/configs/vintf/manifest.xml
 
 # Include proprietary files
--include vendor/xiaomi/mars/BoardConfigVendor.mk
+-include vendor/xiaomi/star/BoardConfigVendor.mk
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -98,7 +98,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc LLVM=1
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350
-TARGET_KERNEL_CONFIG := vendor/mars_defconfig
+TARGET_KERNEL_CONFIG := vendor/star-qgki_defconfig
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
@@ -127,7 +127,7 @@ BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 TARGET_USES_NQ_NFC := true
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := mars|star
+TARGET_OTA_ASSERT_DEVICE := star
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -233,4 +233,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit proprietary blobs
--include vendor/xiaomi/mars/BoardConfigVendor.mk
+-include vendor/xiaomi/star/BoardConfigVendor.mk

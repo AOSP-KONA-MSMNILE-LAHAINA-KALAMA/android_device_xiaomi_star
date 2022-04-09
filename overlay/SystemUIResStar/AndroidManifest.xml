@@ -5,10 +5,10 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="android.overlay.mars">
+    package="com.android.systemui.overlay.star">
 
     <overlay
         android:isStatic="true"
         android:priority="750"
-        android:targetPackage="android" />
+        android:targetPackage="com.android.systemui" />
 </manifest>
