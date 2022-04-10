@@ -1,3 +1,6 @@
+# Doze
+ro.sensor.pickup=xiaomi.sensor.pickup
+
 # DPM
 persist.vendor.dpm.feature=11
 
