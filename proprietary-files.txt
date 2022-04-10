@@ -89,11 +89,7 @@ vendor/lib/rfsa/adsp/misound_res_spk_mars.bin
 
 # Audio configs
 vendor/etc/audio/sku_lahaina/audio_effects.xml
-vendor/etc/audio/sku_shima/audio_effects.xml
-vendor/etc/audio/sku_yupik/audio_effects.xml
 vendor/etc/audio/sku_lahaina/audio_io_policy.conf
-vendor/etc/audio/sku_shima/audio_io_policy.conf
-vendor/etc/audio/sku_yupik/audio_io_policy.conf
 vendor/etc/audio/sku_lahaina/audio_platform_info.xml
 vendor/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml
 vendor/etc/audio/sku_lahaina/mixer_paths.xml
