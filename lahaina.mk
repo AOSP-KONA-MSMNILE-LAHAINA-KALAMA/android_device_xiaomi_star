@@ -276,7 +276,8 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libstagefrighthw \
     libstagefright_omx \
-    libstagefright_foundation
+    libstagefright_foundation \
+    libstagefright_softomx.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
