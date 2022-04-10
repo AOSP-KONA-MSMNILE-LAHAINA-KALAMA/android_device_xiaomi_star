@@ -137,8 +137,10 @@ PRODUCT_COPY_FILES += \
 
 # Codec2
 PRODUCT_PACKAGES += \
-    libcodec2_vndk.vendor \
-    libcodec2_hidl@1.0.vendor
+    android.hardware.media.c2@1.0.vendor \
+    android.hardware.media.c2@1.1.vendor \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_vndk.vendor
 
 # Display
 -include hardware/qcom-caf/sm8350/display/config/display-board.mk
