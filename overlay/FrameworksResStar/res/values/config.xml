@@ -410,6 +410,10 @@
          that can be set by the user. -->
     <integer name="config_screenBrightnessDim">13</integer>
 
+    <!-- See AmbientSensor.AmbientColorTemperatureSensor.
+         The ambient color temperature sensor name. -->
+    <string name="config_displayWhiteBalanceColorTemperatureSensorName">com.google.sensor.color</string>
+
     <!-- Height of the status bar in portrait -->
     <dimen name="status_bar_height">137px</dimen>
 
