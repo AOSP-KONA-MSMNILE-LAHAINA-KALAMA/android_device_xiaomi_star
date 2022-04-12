@@ -334,10 +334,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
 # Overlays
-PRODUCT_ENFORCE_RRO_TARGETS := *
-
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-pe
-
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResCommon \
@@ -348,6 +344,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     FrameworksResStar \
+    PEStarSystemUI \
     SettingsProviderOverlayStar \
     SettingsResStar \
     SystemUIResStar
