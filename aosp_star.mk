@@ -19,6 +19,9 @@ $(call inherit-product, device/xiaomi/star/lahaina.mk)
 # Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Call the MiuiCamera setup
+$(call inherit-product-if-exists, vendor/xiaomi/star-miuicamera/products/miuicamera.mk)
+
 TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_NAME := aosp_star

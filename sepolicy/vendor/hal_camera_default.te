@@ -1,4 +1,3 @@
-type vendor_camera_sensor_prop, vendor_internal_property_type, vendor_property_type, property_type;
 type camera_persist_file, vendor_persist_type, file_type;
 type vendor_hal_cameraperf_hwservice, hwservice_manager_type;
 
@@ -9,3 +8,5 @@ add_hwservice(hal_camera_default, vendor_hal_cameraperf_hwservice)
 
 allow hal_camera_default system_server:binder { call };
 allow hal_camera_default mnt_vendor_file:dir { search };
+
+vendor_public_prop(vendor_camera_sensor_prop)
