@@ -84,6 +84,10 @@ DEVICE_MANIFEST_FILE := \
 # Include proprietary files
 -include vendor/xiaomi/star/BoardConfigVendor.mk
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_star
+TARGET_RECOVERY_DEVICE_MODULES := libinit_star
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image
@@ -126,7 +130,7 @@ BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 TARGET_USES_NQ_NFC := true
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := star
+TARGET_OTA_ASSERT_DEVICE := mars,star
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
