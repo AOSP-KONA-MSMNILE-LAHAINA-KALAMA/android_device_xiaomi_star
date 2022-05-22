@@ -26,7 +26,7 @@
          corner edges), this pulls out just the curve.
      -->
     <string name="config_rounded_mask" translatable="false">
-        M 0.00 0.00 L 168.00 0.00 C 148.62 2.16 129.20 5.12 110.86 11.69 C 84.28 21.09 60.96 38.32 42.03 59.00 C 32.28 69.97 24.08 82.28 17.51 95.39 C 6.55 117.97 2.48 143.16 0 168 L 0.00 0.00 Z
+        M0,0H194S123.711,-1.438 85,24C69.437,34.227 47.5,44.815 22,87 -2.227,127.084 0,194 0,194
     </string>
 
     <!-- Respect drawable/rounded.xml intrinsic size for multiple radius corner path customization -->

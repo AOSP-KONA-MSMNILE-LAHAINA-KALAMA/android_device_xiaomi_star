@@ -16,9 +16,9 @@
 <resources>
 
     <!--  Allow CornerHandleView and PathSpecCornerPathRenderer to decouple from corner-radius -->
-    <dimen name="config_rounded_mask_size">168px</dimen>
-    <dimen name="config_rounded_mask_size_top">197px</dimen>
-    <dimen name="config_rounded_mask_size_bottom">168px</dimen>
+    <dimen name="config_rounded_mask_size">194px</dimen>
+    <dimen name="config_rounded_mask_size_top">243px</dimen>
+    <dimen name="config_rounded_mask_size_bottom">194px</dimen>
 
     <!-- for 18dp of padding at 2.75px/dp at default density -->
     <dimen name="rounded_corner_content_padding">68px</dimen>
