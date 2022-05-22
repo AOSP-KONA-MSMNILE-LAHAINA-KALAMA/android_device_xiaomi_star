@@ -231,7 +231,7 @@ CONFIG_IEEE80211AC := true
 CONFIG_IEEE80211AX := true
 
 # Inherit proprietary blobs
--include vendor/xiaomi/star/BoardConfigVendor.mk
+include vendor/xiaomi/star/BoardConfigVendor.mk
 
 # Inherit from proprietary files for miuicamera
 -include vendor/xiaomi/star-miuicamera/products/board.mk
