@@ -371,9 +371,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext-privapp-permissions-qti.xml
-
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
