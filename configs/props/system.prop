@@ -11,9 +11,6 @@ vendor.bluetooth.soc=hastings
 # Charger
 ro.charger.enable_suspend=true
 
-# CNE
-persist.vendor.cne.feature=1
-
 # Display
 debug.gralloc.gfx_ubwc_disable=0
 debug.sf.enable_hwc_vds=1
@@ -21,11 +18,6 @@ persist.vendor.color.matrix=2
 
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
-
-# IMS
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
 
 # Iorap
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
@@ -51,13 +43,6 @@ ro.vendor.qti.va_aosp.support=1
 
 # Qcom
 ro.vendor.qti.sys.fw.bservice_enable=true
-
-# Radio
-DEVICE_PROVISIONED=1
-ril.subscription.types=NV,RUIM
-
-# RIL
-persist.sys.fflag.override.settings_provider_model=false
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
