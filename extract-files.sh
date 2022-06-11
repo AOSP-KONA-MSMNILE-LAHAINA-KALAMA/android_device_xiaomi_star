@@ -58,9 +58,6 @@ function blob_fixup() {
         vendor/etc/camera/pureShot_parameter.xml)
             sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
             ;;
-        vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
-            sed -ni '/ozoaudio/!p' "${2}"
-            ;;
         vendor/etc/camera/star_motiontuning.xml|vendor/etc/camera/mars_motiontuning.xml)
             sed -i 's/xml=version/xml\ version/g' "${2}"
 	    ;;
