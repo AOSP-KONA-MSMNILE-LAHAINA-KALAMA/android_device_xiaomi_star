@@ -11,6 +11,12 @@
 # Camera
 /mnt/vendor/persist/camera(/.*)?   u:object_r:camera_persist_file:s0
 
+# Firmware
+/bt_firmware(/.*)?                                          u:object_r:bt_firmware_file:s0
+/firmware(/.*)?                                             u:object_r:firmware_file:s0
+/persist(/.*)?                                              u:object_r:mnt_vendor_file:s0
+/dsp(/.*)?                                                  u:object_r:adsprpcd_file:s0
+
 # IR
 /dev/ir_spi                                      u:object_r:ir_spi_device:s0
 
