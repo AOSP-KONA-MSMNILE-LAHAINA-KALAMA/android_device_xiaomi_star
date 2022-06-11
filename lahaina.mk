@@ -332,7 +332,6 @@ PRODUCT_PACKAGES += \
     SystemUIResStar
 
 # Platform
-PRODUCT_BOARD_PLATFORM := lahaina
 TARGET_BOARD_PLATFORM := lahaina
 
 # Partitions
