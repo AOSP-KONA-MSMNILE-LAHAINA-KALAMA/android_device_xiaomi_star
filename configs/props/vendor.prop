@@ -169,7 +169,6 @@ ro.opengles.version=196610
 # Media
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
-media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.config.vc_call_vol_steps=11
 
 # MGLRU (Multi-gen LRU)

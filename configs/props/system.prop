@@ -31,7 +31,6 @@ media.stagefright.enable-player=true
 media.stagefright.enable-qcp=true
 media.stagefright.enable-scan=true
 persist.mm.enable.prefetch=true
-ro.media.recorder-max-base-layer-fps=60
 
 # NFC
 ro.nfc.port=I2C
