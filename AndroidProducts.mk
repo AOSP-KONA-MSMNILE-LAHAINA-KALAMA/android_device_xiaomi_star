@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 Pixel Experience
+# Copyright (C) 2022 Project 404
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,11 +12,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_star.mk
+    $(LOCAL_DIR)/p404_star.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_star-user \
-    aosp_star-userdebug \
-    aosp_star-eng
+    p404_star-user \
+    p404_star-userdebug \
+    p404_star-eng

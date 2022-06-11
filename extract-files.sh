@@ -17,7 +17,7 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 ANDROID_ROOT="${MY_DIR}/../../.."
 
-HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
+HELPER="${ANDROID_ROOT}/vendor/404/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -55,17 +55,11 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        system_ext/lib64/libwfdnative.so)
-            "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
-            ;;
         vendor/etc/camera/pureShot_parameter.xml)
             sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
             ;;
         vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
             sed -ni '/ozoaudio/!p' "${2}"
-            ;;
-        vendor/lib64/android.hardware.secure_element@1.0-impl.so)
-            "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
         vendor/etc/camera/star_motiontuning.xml|vendor/etc/camera/mars_motiontuning.xml)
             sed -i 's/xml=version/xml\ version/g' "${2}"
