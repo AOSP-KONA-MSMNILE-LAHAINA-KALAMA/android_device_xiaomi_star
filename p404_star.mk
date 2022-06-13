@@ -25,6 +25,9 @@ $(call inherit-product, vendor/xiaomi/star-miuicamera/products/miuicamera.mk)
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1440
 
+# Include GAPPS
+WITH_GAPPS := true
+
 PRODUCT_NAME := p404_star
 PRODUCT_DEVICE := star
 PRODUCT_BRAND := Xiaomi
