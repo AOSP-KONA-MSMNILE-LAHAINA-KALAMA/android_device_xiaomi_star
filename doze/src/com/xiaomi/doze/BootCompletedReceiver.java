@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
- *               2017-2019 The LineageOS Project
+ *               2017-2022 The LineageOS Project
  *               2020 Paranoid Android
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,6 +33,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
-        DozeUtils.checkDozeService(context);
+        DozeUtils.onBootCompleted(context);
     }
 }
