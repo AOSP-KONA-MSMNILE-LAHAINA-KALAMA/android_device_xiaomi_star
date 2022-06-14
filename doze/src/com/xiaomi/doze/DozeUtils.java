@@ -18,12 +18,15 @@
 
 package com.xiaomi.doze;
 
+import static android.provider.Settings.Secure.DOZE_ALWAYS_ON;
+import static android.provider.Settings.Secure.DOZE_ENABLED;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.hardware.display.AmbientDisplayConfiguration;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
+import android.hardware.display.AmbientDisplayConfiguration;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
@@ -32,9 +35,6 @@ import androidx.preference.PreferenceManager;
 
 import com.xiaomi.doze.FileUtils;
 import com.xiaomi.doze.R;
-
-import static android.provider.Settings.Secure.DOZE_ALWAYS_ON;
-import static android.provider.Settings.Secure.DOZE_ENABLED;
 
 public final class DozeUtils {
 
