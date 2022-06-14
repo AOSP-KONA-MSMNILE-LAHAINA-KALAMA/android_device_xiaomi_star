@@ -30,6 +30,7 @@ import android.util.Log;
 import androidx.preference.ListPreference;
 import androidx.preference.PreferenceManager;
 
+import com.xiaomi.doze.FileUtils;
 import com.xiaomi.doze.R;
 
 import static android.provider.Settings.Secure.DOZE_ALWAYS_ON;
