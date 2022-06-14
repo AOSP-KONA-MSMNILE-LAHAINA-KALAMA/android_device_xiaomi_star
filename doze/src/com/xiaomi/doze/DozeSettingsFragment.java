@@ -158,8 +158,8 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
         }
 
         mHandler.post(() -> {
-                DozeUtils.checkDozeService(getActivity());
-                DozeUtils.updateDozeBrightnessIcon(getContext(), mDozeBrightnessPreference);
+            DozeUtils.checkDozeService(getActivity());
+            DozeUtils.updateDozeBrightnessIcon(getContext(), mDozeBrightnessPreference);
         });
 
         return true;
