@@ -30,12 +30,14 @@ public class DozeService extends Service {
     private static final String TAG = "DozeService";
     private static final boolean DEBUG = false;
 
+    private AodSensor mAodSensor;
     private PickupSensor mPickupSensor;
     private ProximitySensor mProximitySensor;
 
     @Override
     public void onCreate() {
         if (DEBUG) Log.d(TAG, "Creating service");
+        mAodSensor = new AodSensor(this);
         mPickupSensor = new PickupSensor(this);
         mProximitySensor = new ProximitySensor(this);
 
@@ -74,6 +76,9 @@ public class DozeService extends Service {
                 DozeUtils.isPocketGestureEnabled(this)) {
             mProximitySensor.disable();
         }
+        if (DozeUtils.isDozeAutoBrightnessEnabled(this)) {
+            mAodSensor.disable();
+        }
     }
 
     private void onDisplayOff() {
@@ -84,6 +89,9 @@ public class DozeService extends Service {
         if (DozeUtils.isHandwaveGestureEnabled(this) ||
                 DozeUtils.isPocketGestureEnabled(this)) {
             mProximitySensor.enable();
+        }
+        if (DozeUtils.isDozeAutoBrightnessEnabled(this)) {
+            mAodSensor.enable();
         }
     }
 
