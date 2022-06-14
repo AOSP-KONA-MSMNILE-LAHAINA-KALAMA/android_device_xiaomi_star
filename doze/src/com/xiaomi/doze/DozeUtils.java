@@ -27,7 +27,10 @@ import android.hardware.SensorManager;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
+import androidx.preference.ListPreference;
 import androidx.preference.PreferenceManager;
+
+import com.xiaomi.doze.R;
 
 import static android.provider.Settings.Secure.DOZE_ALWAYS_ON;
 import static android.provider.Settings.Secure.DOZE_ENABLED;
@@ -183,5 +186,20 @@ public final class DozeUtils {
             }
         }
         return null;
+    }
+
+    protected static void updateDozeBrightnessIcon(Context context, ListPreference preference) {
+        switch (PreferenceManager.getDefaultSharedPreferences(context).getString(
+                DOZE_BRIGHTNESS_KEY, DOZE_BRIGHTNESS_LBM)) {
+            case DozeUtils.DOZE_BRIGHTNESS_LBM:
+                preference.setIcon(R.drawable.ic_doze_brightness_low);
+                break;
+            case DozeUtils.DOZE_BRIGHTNESS_HBM:
+                preference.setIcon(R.drawable.ic_doze_brightness_high);
+                break;
+            case DozeUtils.DOZE_BRIGHTNESS_AUTO:
+                preference.setIcon(R.drawable.ic_doze_brightness_auto);
+                break;
+        }
     }
 }
