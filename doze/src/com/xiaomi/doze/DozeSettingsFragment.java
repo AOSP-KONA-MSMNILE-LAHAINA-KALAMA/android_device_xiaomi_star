@@ -40,6 +40,7 @@ import androidx.preference.SwitchPreference;
 import com.android.settingslib.widget.MainSwitchPreference;
 import com.android.settingslib.widget.OnMainSwitchChangeListener;
 
+import com.xiaomi.doze.FileUtils;
 import com.xiaomi.doze.R;
 
 public class DozeSettingsFragment extends PreferenceFragment implements OnPreferenceChangeListener,
@@ -121,15 +122,19 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
             getPreferenceScreen().removePreference(proximitySensorCategory);
         }
 
-        // Hide AOD if not supported and set all its dependents otherwise
+        // Hide AOD and doze brightness if not supported and set all its dependents otherwise
         if (!DozeUtils.alwaysOnDisplayAvailable(getActivity())) {
             getPreferenceScreen().removePreference(mAlwaysOnDisplayPreference);
             getPreferenceScreen().removePreference(mDozeBrightnessPreference);
         } else {
+            if (!FileUtils.isFileWritable(DozeUtils.DOZE_MODE_PATH)) {
+                getPreferenceScreen().removePreference(mDozeBrightnessPreference);
+            } else {
+                DozeUtils.updateDozeBrightnessIcon(getContext(), mDozeBrightnessPreference);
+            }
             mRaiseToWakePreference.setDependency(DozeUtils.ALWAYS_ON_DISPLAY);
             pickupSensorCategory.setDependency(DozeUtils.ALWAYS_ON_DISPLAY);
             proximitySensorCategory.setDependency(DozeUtils.ALWAYS_ON_DISPLAY);
-            DozeUtils.updateDozeBrightnessIcon(getContext(), mDozeBrightnessPreference);
         }
     }
 
