@@ -1219,11 +1219,9 @@ vendor/bin/init.qti.qcv.sh
 vendor/etc/init/init.qti.qcv.rc
 
 # QMI
-vendor/bin/irsc_util
 vendor/bin/qmipriod
 vendor/bin/qrtr-ns
 vendor/etc/init/qmipriod.rc
-vendor/etc/sec_config
 vendor/lib/libdiag.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdsi_netctrl.so
