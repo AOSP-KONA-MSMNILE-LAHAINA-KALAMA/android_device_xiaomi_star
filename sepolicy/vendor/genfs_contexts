@@ -51,6 +51,7 @@ genfscon sysfs /devices/platform/soc/abb0000.qcom,evass/wakeup u:object_r:sysfs_
 genfscon sysfs /devices/platform/soc/b0000000.qcom,cnss-qca6490/subsys8/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/b0000000.qcom,cnss-qca6490/subsys10/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/b0000000.qcom,cnss-qca6490/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/b0000000.qcom,cnss-qca6490/wakeup/wakeup66 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:pon_hlos@1300/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:pon_pbs@800/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pmk8350@0:rtc@6100/rtc/rtc0/wakeup u:object_r:sysfs_wakeup:s0
