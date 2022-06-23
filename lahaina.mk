@@ -164,7 +164,7 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3.vendor \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_sm8350 \
+    android.hardware.biometrics.fingerprint@2.3-service.star \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 
 PRODUCT_COPY_FILES += \
@@ -416,7 +416,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.xiaomi_sm8350
+    vendor.qti.hardware.vibrator.service.star
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
