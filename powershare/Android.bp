@@ -16,9 +16,9 @@
 cc_binary {
     relative_install_path: "hw",
     defaults: ["hidl_defaults"],
-    name: "vendor.lineage.powershare@1.0-service.xiaomi_sm8350",
-    init_rc: ["vendor.lineage.powershare@1.0-service.xiaomi_sm8350.rc"],
-    vintf_fragments: ["vendor.lineage.powershare@1.0-service.xiaomi_sm8350.xml"],
+    name: "vendor.lineage.powershare@1.0-service.star",
+    init_rc: ["vendor.lineage.powershare@1.0-service.star.rc"],
+    vintf_fragments: ["vendor.lineage.powershare@1.0-service.star.xml"],
     srcs: ["service.cpp", "PowerShare.cpp"],
     proprietary: true,
     shared_libs: [

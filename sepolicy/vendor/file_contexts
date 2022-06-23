@@ -24,7 +24,7 @@
 /dev/xiaomi-touch                                                  u:object_r:vendor_touchfeature_device:s0
 
 # Powershare
-/vendor/bin/hw/vendor\.lineage\.powershare@1\.0-service\.xiaomi_sm8350                           u:object_r:hal_lineage_powershare_default_exec:s0
+/vendor/bin/hw/vendor\.lineage\.powershare@1\.0-service\.star                           u:object_r:hal_lineage_powershare_default_exec:s0
 
 # Sensors
 /sys/bus/iio/devices                                                                                                            u:object_r:vendor_sysfs_iio:s0
@@ -37,7 +37,7 @@
 /data/vendor/fpc(/.*)?                                              u:object_r:vendor_fingerprint_data_file:s0
 /data/vendor/fpdump(/.*)?                                           u:object_r:vendor_fingerprint_data_file:s0
 /data/vendor/goodix(/.*)?                                           u:object_r:vendor_fingerprint_data_file:s0
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi_sm8350 u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.star u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/mfp-daemon                                           u:object_r:hal_fingerprint_default_exec:s0
 
 # FOD
@@ -53,7 +53,7 @@
 /vendor/bin/mi_thermald                              u:object_r:mi_thermald_exec:s0
 
 # Vibrator
-/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi_sm8350                            u:object_r:hal_vibrator_default_exec:s0
+/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.star                            u:object_r:hal_vibrator_default_exec:s0
 
 # Xiaomi MAC
 /vendor/bin/nv_mac                             u:object_r:vendor_wcnss_service_exec:s0

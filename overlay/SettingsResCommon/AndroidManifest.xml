@@ -5,7 +5,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.settings.overlay.xiaomi_sm8350_common">
+    package="com.android.settings.overlay.star_common">
 
     <overlay
         android:isStatic="true"
