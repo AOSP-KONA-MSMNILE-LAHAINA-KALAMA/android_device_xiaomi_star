@@ -125,6 +125,9 @@ on boot
     chown system system /dev/xiaomi-touch
     chmod 0660 /dev/xiaomi-touch
 
+    chmod 0666 /dev/stmvl53l5
+    chown system system /dev/stmvl53l5
+
     write /dev/cpuset/audio-app/cpus 1-2
 
     chown system /sys/devices/system/cpu/hyp_core_ctl/enable
