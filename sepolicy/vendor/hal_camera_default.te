@@ -10,4 +10,6 @@ add_hwservice(hal_camera_default, hal_camerapostproc_xiaomi_hwservice)
 allow hal_camera_default system_server:binder { call };
 allow hal_camera_default mnt_vendor_file:dir { search };
 
+allow hal_camera_default stmvl53l5_device:chr_file { ioctl read write open };
+
 vendor_public_prop(vendor_camera_sensor_prop)
