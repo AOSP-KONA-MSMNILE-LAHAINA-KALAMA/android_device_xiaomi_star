@@ -819,6 +819,10 @@ vendor/etc/mdss_dsi_k2_38_08_0a_dsc_cmd_mi.xml
 vendor/etc/mdss_dsi_k2_38_08_0a_mp_dsc_cmd_mi.xml
 vendor/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml
 
+# Display gralloc - from LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
+vendor/lib64/libgralloccore.so|3f9a1e2d36a9221b078927327c328bfa3185d973
+vendor/lib64/libgrallocutils.so|0bafbd7b7de5f267c4f5836acb4be174b2870ccd
+
 # Display hardware - from LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
 vendor/lib64/libdisplayqos.so|aa222f4c1a2d2fb60944c44f8a82621d6bc75184
 vendor/lib64/libdisplayskuutils.so|76149ecef8fee8d4faa303c0cc2a73f51c363b4c
