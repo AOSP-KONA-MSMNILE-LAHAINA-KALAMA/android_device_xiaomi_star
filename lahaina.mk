@@ -252,10 +252,6 @@ PRODUCT_PACKAGES += \
     libstagefright_omx \
     libstagefright_foundation
 
-# Minijail
-PRODUCT_PACKAGES += \
-    libavservices_minijail_vendor
-
 # Netd
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
