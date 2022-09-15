@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 Pixel Experience
+# Copyright (C) 2022 ArrowOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_star.mk
+    $(LOCAL_DIR)/arrow_star.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_star-user \
-    aosp_star-userdebug \
-    aosp_star-eng
+    arrow_star-user \
+    arrow_star-userdebug \
+    arrow_star-eng
