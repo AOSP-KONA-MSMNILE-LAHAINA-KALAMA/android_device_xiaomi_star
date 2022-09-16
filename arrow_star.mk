@@ -19,6 +19,8 @@ $(call inherit-product, device/xiaomi/star/lahaina.mk)
 # Inherit some common ArrowOS stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
 
+$(call inherit-product, vendor/extra/product.mk)
+
 # Call the MiuiCamera setup
 $(call inherit-product-if-exists, vendor/xiaomi/star-miuicamera/products/miuicamera.mk)
 
