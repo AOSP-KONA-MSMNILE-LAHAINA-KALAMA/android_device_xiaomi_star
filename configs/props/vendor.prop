@@ -171,6 +171,9 @@ debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 ro.config.vc_call_vol_steps=11
 
+# Netflix
+ro.netflix.bsp_rev=Q875-32408-1
+
 # NFC
 ro.vendor.nfc.repair=1
 ro.vendor.se.type=eSE,HCE,UICC
