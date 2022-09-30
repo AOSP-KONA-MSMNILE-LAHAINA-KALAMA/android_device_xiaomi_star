@@ -279,6 +279,7 @@ PRODUCT_COPY_FILES += \
 # Minijail
 PRODUCT_PACKAGES += \
     libavservices_minijail \
+    libavservices_minijail_vendor \
     libavservices_minijail.vendor
 
 # Netd
