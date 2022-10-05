@@ -1,1 +1,0 @@
-allow mediacodec vendor_audio_prop:file { read getattr open map };
