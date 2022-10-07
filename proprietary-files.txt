@@ -1289,20 +1289,15 @@ vendor/lib64/libqmiservices.so
 vendor/lib64/libqrtr.so
 
 # Ozoaudio
-system/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk.so
-system/lib64/libcodec2_vndk.so:vendor/lib64/libcodec2_vndk.so
 vendor/bin/hw/vendor.ozoaudio.media.c2@1.0-service
 vendor/etc/init/vendor.ozoaudio.media.c2@1.0-service.rc
 vendor/etc/ozosdk.license
 vendor/etc/seccomp_policy/vendor.ozoaudio.media.c2@1.0-default-seccomp_policy
 vendor/lib/libav_ozoencoder.so
-vendor/lib/libcodec2_hidl@1.0.so
 vendor/lib/libozoaudio.so
 vendor/lib/soundfx/libozoprocessing.so
 vendor/lib64/libav_ozodecoder.so
 vendor/lib64/libav_ozoencoder.so
-vendor/lib64/libcodec2_hidl@1.0.so
-vendor/lib64/libcodec2_hidl@1.1.so
 vendor/lib64/libcodec2_soft_ozodec.so
 vendor/lib64/libcodec2_soft_ozoenc.so
 vendor/lib64/libozoaudio.so
