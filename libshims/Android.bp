@@ -1,0 +1,10 @@
+//
+// Copyright (C) 2022 Pixel Experience
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+cc_library_shared {
+    name: "lib-ozoaudio",
+    srcs: ["lib-ozoaudio.cpp"],
+    vendor: true,
+}
