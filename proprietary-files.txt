@@ -634,6 +634,7 @@ vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
 
 # Camera (Prebuilt)
+system/lib64/libion.so:vendor/lib64/libion.so
 vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
 vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
 vendor/lib/android.hardware.camera.provider@2.4-external.so
