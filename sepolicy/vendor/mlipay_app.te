@@ -12,6 +12,12 @@ allow mlipay_app hal_mlipay_hwservice:hwservice_manager find;
 # Allow interaction with activity_service
 allow mlipay_app activity_service:service_manager find;
 
+allow mlipay_app {
+  game_service
+  netstats_service
+  content_capture_service
+}:service_manager find;
+
 r_dir_file(mlipay_app, firmware_file)
 set_prop(mlipay_app, vendor_mlipay_prop);
 
