@@ -8,6 +8,8 @@ allow dirac_app {
   audioserver_service
   autofill_service
   cameraserver_service
+  content_capture_service
+  game_service
   gpu_service
   mediaextractor_service
   mediametrics_service
@@ -19,11 +21,13 @@ allow dirac_app {
   tethering_service
 }:service_manager find;
 
-# Allow dirac_app to read and write to cgroup
-allow dirac_app cgroup:file rw_file_perms;
-
 allow dirac_app system_app_data_file:dir create_dir_perms;
 allow dirac_app system_app_data_file:file create_file_perms;
+
+allow dirac_app {
+  system_data_file
+  user_profile_root_file
+}:dir search;
 
 allow dirac_app {
   cgroup
