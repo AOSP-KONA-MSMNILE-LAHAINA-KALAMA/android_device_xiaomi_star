@@ -822,27 +822,27 @@ vendor/etc/mdss_dsi_k2_38_08_0a_dsc_cmd_mi.xml
 vendor/etc/mdss_dsi_k2_38_08_0a_mp_dsc_cmd_mi.xml
 vendor/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml
 
-# Display calibration - from LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
+# Display calibration - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
 vendor/etc/display/advanced_sf_offsets.xml|e145a0c0f975f6d924fbe7f18f531ae044ec3bef
 
 # Display gralloc - from LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
 vendor/lib64/libgralloccore.so|3f9a1e2d36a9221b078927327c328bfa3185d973
 vendor/lib64/libgrallocutils.so|0bafbd7b7de5f267c4f5836acb4be174b2870ccd
 
-# Display hardware - from LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
+# Display hardware - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
 vendor/lib64/libdisplayqos.so|aa222f4c1a2d2fb60944c44f8a82621d6bc75184
-vendor/lib64/libdisplayskuutils.so|76149ecef8fee8d4faa303c0cc2a73f51c363b4c
-vendor/lib64/libdpps.so|d53fb49c44d3cd63f428f8cfe4926650e3275f28
+vendor/lib64/libdisplayskuutils.so|d467f3bcaeafa6ed9de62afe2c00a3be46f4bb0f
+vendor/lib64/libdpps.so|c0a095d4230ed48c80c54f8ad1fcb28764a73d97
 vendor/lib64/libhdr_tm.so|7954c5cd5c0b23fe8d0609361c22d24c59f1448b
 vendor/lib64/libqdcm-mode-parser.so|207143ab4dda0886bde2a0333d7a1bcd7af6f8e1
-vendor/lib64/libqrtrclient.so|51c55fea28fa475ae9b2c64592f32802e6ba6c25
+vendor/lib64/libqrtrclient.so|2474a708487c269c04afffbf755fff1686c6011c
 vendor/lib64/libqseed3.so|d62c37baf259250cadfcff8734e82054ed87bb96
 vendor/lib64/librcmask.so|8feb479fe590b6aec282ce3342574d9113f80516
 vendor/lib64/libsdm-colormgr-algo.so|5416a3b9b0735099c9b86f451f41386711787ea4
-vendor/lib64/libsdm-color.so|aeb07689c1bfc885ef9c846c0148e6f1e3f7f0ac
-vendor/lib64/libsdm-diag.so|720089c4bc66897e1bfd84e7983b3c34f2c4eec8
+vendor/lib64/libsdm-color.so|a83576915a146492d430711e273b9af9a95d4fed
+vendor/lib64/libsdm-diag.so|393c9ad3e3ad3210515900627f65bf6e3633226e
 vendor/lib64/libsdm-disp-vndapis.so|dc3ff8c971bbcb0d1b9e5079324d1d1d05a1fd39
-vendor/lib64/libsdmextension.so|721ac8e32cca6d418906dcc520a72e5bccbf55ee
+vendor/lib64/libsdmextension.so|b9586575e526d3fb41945e56a67252d454ef8768
 vendor/lib64/libsnapdragoncolor-manager.so|e7f55a1ba843bb570afa6bbf16bb61dc01ec74ea
 vendor/lib64/libsnapdragoncolor-qdcm.so|673c41753603bacb197674df567723dfd928384e
 vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
