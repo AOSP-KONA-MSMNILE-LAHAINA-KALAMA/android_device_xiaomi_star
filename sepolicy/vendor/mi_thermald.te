@@ -17,6 +17,7 @@ allow mi_thermald init:unix_stream_socket { connectto };
 allow mi_thermald property_socket:sock_file { write };
 allow mi_thermald sysfs:file w_file_perms;
 allow mi_thermald sysfs_thermal:file w_file_perms;
+allow mi_thermald property_socket:sock_file write;
 allow mi_thermald vendor_sysfs_kgsl:file w_file_perms;
 allow mi_thermald vendor_sysfs_battery_supply:file w_file_perms;
 allow mi_thermald vendor_sysfs_graphics:file w_file_perms;
@@ -28,3 +29,5 @@ allow mi_thermald sysfs_devices_system_cpu:file rw_file_perms;
 
 allow mi_thermald self:capability { fsetid sys_boot chown fowner };
 allow mi_thermald self:capability2 { wake_alarm block_suspend };
+
+set_prop(mi_thermald, vendor_thermal_normal_prop)
