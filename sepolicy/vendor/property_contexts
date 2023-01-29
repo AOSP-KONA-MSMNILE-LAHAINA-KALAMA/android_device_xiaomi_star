@@ -18,3 +18,7 @@ persist.vendor.audio.ozo.codec.enable        u:object_r:vendor_audio_prop:s0
 # Mlipay
 persist.vendor.sys.pay.                 u:object_r:vendor_mlipay_prop:s0
 persist.vendor.sys.provision.status     u:object_r:vendor_mlipay_prop:s0
+
+# Serial number
+ro.vendor.oem.sno                               u:object_r:vendor_sno_prop:s0
+ro.vendor.oem.psno                              u:object_r:vendor_sno_prop:s0
