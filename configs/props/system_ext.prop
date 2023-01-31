@@ -17,6 +17,7 @@ bluetooth.profile.pbap.server.enabled=true
 
 # Doze
 ro.sensor.pickup=xiaomi.sensor.pickup
+ro.sensor.pickup.lower.value=2
 
 # DPM
 persist.vendor.dpm.feature=11
