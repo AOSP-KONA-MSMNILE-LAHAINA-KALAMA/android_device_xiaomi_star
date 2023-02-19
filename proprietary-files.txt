@@ -681,6 +681,7 @@ vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 
 # Charger (Mi Turbo Charge)
+vendor/etc/init/hw/init.batterysecret.rc
 vendor/bin/batterysecret
 
 # CNE
