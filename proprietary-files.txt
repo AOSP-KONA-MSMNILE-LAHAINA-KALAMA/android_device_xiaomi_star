@@ -1698,6 +1698,7 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 -vendor/app/SoterService/SoterService.apk
 
 # Thermal
+vendor/etc/init/hw/init.mi_thermald.rc
 vendor/bin/mi_thermald
 vendor/lib64/libthermalclient.so
 
