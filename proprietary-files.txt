@@ -908,10 +908,12 @@ vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
 # Fingerprint
 -vendor/etc/vintf/manifest/fod.xml
-vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.lahaina.so
 vendor/lib64/com.fingerprints.extension@3.0.so
-vendor/lib64/libgf_hal.so
 vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
+
+# Fingerprint - from star V13.0.13.0.SKACNXM
+vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.lahaina.so|ff22a59c5dd58b83b0faaac74255d2cba7ebab11
+vendor/lib64/libgf_hal.so|f12f750d31e94a18fc8b6027340c7a0e2c6a31e5
 
 # Fingerprint dtool
 vendor/bin/hw/vendor.xiaomi.hardware.dtool@1.0-service
