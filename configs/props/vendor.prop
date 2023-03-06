@@ -161,9 +161,6 @@ vendor.gatekeeper.disable_spu=true
 # Graphics
 debug.sf.enable_gl_backpressure=1
 persist.sys.sf.native_mode=258
-ro.hardware.egl=adreno
-ro.hardware.vulkan=adreno
-ro.opengles.version=196610
 
 # Media
 debug.stagefright.ccodec=4
