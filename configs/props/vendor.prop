@@ -163,7 +163,6 @@ debug.sf.enable_gl_backpressure=1
 persist.sys.sf.native_mode=258
 
 # Media
-debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 ro.config.vc_call_vol_steps=11
 
