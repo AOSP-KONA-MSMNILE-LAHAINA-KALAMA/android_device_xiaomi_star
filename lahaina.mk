@@ -366,7 +366,7 @@ PRODUCT_PACKAGES += \
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.xiaomi_sm8350
+    vendor.lineage.powershare@1.0-service.star
 
 # QTI
 PRODUCT_PACKAGES += \
