@@ -218,6 +218,7 @@ vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/hw/camera.xiaomi.so
+vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/HDR10plus.so
 vendor/lib64/com.qti.chiusecaseselector.so
@@ -352,9 +353,6 @@ vendor/lib64/vendor.xiaomi.hardware.cameraperf@1.0-impl.so
 vendor/lib64/vendor.xiaomi.hardware.cameraperf@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so
 vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
-
-# Camera - from miui_STAR_V13.0.9.0.SKACNXM
-vendor/lib64/hw/camera.qcom.so|ba2f4315a1509ccf58b616460b3c04b3a52fe612
 
 # Camera-arcsoft
 vendor/lib64/libarcsoft_beautyshot.so
