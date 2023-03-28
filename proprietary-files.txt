@@ -263,6 +263,7 @@ vendor/lib64/libBlinkStub.so
 vendor/lib64/libFlickerDet.so
 vendor/lib64/libI420colorconvert.so
 vendor/lib64/libMegviiFacepp-0.5.2.so
+vendor/lib64/libQnnHtpStub.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libSuperSensorCPU.so
 vendor/lib64/libSuperSensorHVX.so
