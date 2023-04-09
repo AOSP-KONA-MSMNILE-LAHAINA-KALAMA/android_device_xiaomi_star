@@ -822,17 +822,17 @@ vendor/etc/mdss_dsi_k2_38_08_0a_dsc_cmd_mi.xml
 vendor/etc/mdss_dsi_k2_38_08_0a_mp_dsc_cmd_mi.xml
 vendor/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml
 
-# Display calibration - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+# Display calibration - from LA.UM.9.14.r1-21000-LAHAINA.QSSI12.0
 vendor/etc/display/advanced_sf_offsets.xml|e145a0c0f975f6d924fbe7f18f531ae044ec3bef
 
-# Display gralloc - from LA.UM.9.14.r1-19300.01-LAHAINA.QSSI12.0
+# Display gralloc - from LA.UM.9.14.r1-21000-LAHAINA.QSSI12.0
 vendor/lib64/libgralloccore.so|3f9a1e2d36a9221b078927327c328bfa3185d973
 vendor/lib64/libgrallocutils.so|0bafbd7b7de5f267c4f5836acb4be174b2870ccd
 
-# Display hardware - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+# Display hardware - from LA.UM.9.14.r1-21000-LAHAINA.QSSI12.0
 vendor/lib64/libdisplayqos.so|aa222f4c1a2d2fb60944c44f8a82621d6bc75184
-vendor/lib64/libdisplayskuutils.so|d467f3bcaeafa6ed9de62afe2c00a3be46f4bb0f
-vendor/lib64/libdpps.so|c0a095d4230ed48c80c54f8ad1fcb28764a73d97
+vendor/lib64/libdisplayskuutils.so|37e4d543c696a5c9f0c1b44fd7299a0bc7dba5e8
+vendor/lib64/libdpps.so|9caf32a0d3636af579ea6e1a6c5638a16ed19444
 vendor/lib64/libhdr_tm.so|7954c5cd5c0b23fe8d0609361c22d24c59f1448b
 vendor/lib64/libqdcm-mode-parser.so|207143ab4dda0886bde2a0333d7a1bcd7af6f8e1
 vendor/lib64/libqrtrclient.so|2474a708487c269c04afffbf755fff1686c6011c
@@ -842,7 +842,7 @@ vendor/lib64/libsdm-colormgr-algo.so|5416a3b9b0735099c9b86f451f41386711787ea4
 vendor/lib64/libsdm-color.so|a83576915a146492d430711e273b9af9a95d4fed
 vendor/lib64/libsdm-diag.so|393c9ad3e3ad3210515900627f65bf6e3633226e
 vendor/lib64/libsdm-disp-vndapis.so|dc3ff8c971bbcb0d1b9e5079324d1d1d05a1fd39
-vendor/lib64/libsdmextension.so|b9586575e526d3fb41945e56a67252d454ef8768
+vendor/lib64/libsdmextension.so|4c32026ff8cb1270081881d4def7a2ad05ad0b80
 vendor/lib64/libsnapdragoncolor-manager.so|e7f55a1ba843bb570afa6bbf16bb61dc01ec74ea
 vendor/lib64/libsnapdragoncolor-qdcm.so|673c41753603bacb197674df567723dfd928384e
 vendor/lib64/libtinyxml2_1.so|11ceb3f1e7650c41621d47e5ec5567c8f466086e
@@ -974,36 +974,36 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
-# Graphics - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
-vendor/lib/egl/eglSubDriverAndroid.so|cac529f4cc2381fc8985caded98dc7236d0de43f
+# Graphics - from LA.UM.9.14.r1-21000-LAHAINA.QSSI12.0
+vendor/lib/egl/eglSubDriverAndroid.so|c4133b15d0a36f0775418724e09ce76681baa16d
 vendor/lib/egl/libEGL_adreno.so|c841ec471e3d40b541862c1b0a1d16fd56463cfa
 vendor/lib/egl/libGLESv1_CM_adreno.so|5ab7196d4c8ae861ff484cb6b1f4b5ac3c9738b4
-vendor/lib/egl/libGLESv2_adreno.so|82a74dc9dacd981a8974227048a87d1b3405ccbe
+vendor/lib/egl/libGLESv2_adreno.so|c1b38fb4e49ff5d3ead731d563c2e1dbeb70cd68
 vendor/lib/egl/libq3dtools_adreno.so|994551fb9b829caf80bb7a8f84b4b89cb3104ed9
-vendor/lib/egl/libq3dtools_esx.so|997559069f3246f908f8acc54147b5e763c04e12
-vendor/lib/hw/vulkan.adreno.so|3c5fc46d3360688f198aa732bd265d655bbba1d5
+vendor/lib/egl/libq3dtools_esx.so|eb42f68fa13756ac02b883bf3e52707dee703900
+vendor/lib/hw/vulkan.adreno.so|a77dc4decf18a8bb0cf01d58e6901e842650de8a
 vendor/lib/libC2D2.so|1c89e545a5dabc94d27db32031594a792d91d6fd
-vendor/lib/libCB.so|ca8cbf62025f0df09c20d6c41a4654719fd9c60a
+vendor/lib/libCB.so|7de42b79a9eae3cce3ba408d3c0f2859c184dc17
 vendor/lib/libOpenCL.so|d5642e23207996dbbc13273927127ecf04fced53
-vendor/lib/libadreno_utils.so|9e34c9d9a6859e682f9179d52e239d771423743c
+vendor/lib/libadreno_utils.so|ee8c22b0b577bb225bf437fc0d63e26f700e6733
 vendor/lib/libc2d30_bltlib.so|5dce0e76e03b9cac4fc1f104524625a6f561fe91
-vendor/lib/libgsl.so|1251cef304314c8a924f86df0757a895847bee80
-vendor/lib/libllvm-glnext.so|a9a11644abb8bd8bdddf4db02b3e7777d8ddbb83
+vendor/lib/libgsl.so|c3be78b3f80043240c0ae707d40233889942ac39
+vendor/lib/libllvm-glnext.so|8fce64ef7724cca9fa11bc8fd4001ab84ec94a52
 vendor/lib/libllvm-qcom.so|68bfbf4b6072af78106e7e96e252a664026015c0
-vendor/lib64/egl/eglSubDriverAndroid.so|ac9099723b30614cf7c61c667204a392959694db
+vendor/lib64/egl/eglSubDriverAndroid.so|2692fd8aac6a9fd49faace2213b2631f7595afad
 vendor/lib64/egl/libEGL_adreno.so|2fe7c58e7f040637f201cdfbfdaa8b8257daa514
 vendor/lib64/egl/libGLESv1_CM_adreno.so|b9e14710b9c2be024e1fdf77d60266423e484047
-vendor/lib64/egl/libGLESv2_adreno.so|2aacde9712052563c4b998ea5ac57018db1e2220
+vendor/lib64/egl/libGLESv2_adreno.so|a126513d45f9feab4b2e173a40fc753b6da5d8cf
 vendor/lib64/egl/libq3dtools_adreno.so|172810bc218ab55fe95f628ab1c0d37833eb0021
-vendor/lib64/egl/libq3dtools_esx.so|abe73a7c9a90ad1c80d8ad8f5c942b902623e4f0
-vendor/lib64/hw/vulkan.adreno.so|ef355a774941620917f1ba1f0b48c9193091aad4
+vendor/lib64/egl/libq3dtools_esx.so|46f106d33a41501c2b1f0356326e546edfdf57ba
+vendor/lib64/hw/vulkan.adreno.so|cf6f99a6109b5f4108a631caa0cdd221b70263ad
 vendor/lib64/libC2D2.so|0b4aa67ef7e86df61a1bfd7dfd4680e0f0d7104c
-vendor/lib64/libCB.so|cb69d5aa6cccd485774c8aea499dcd5b708af1cf
+vendor/lib64/libCB.so|cb490f030027da2d1e5b6fed0714009e53bc001c
 vendor/lib64/libOpenCL.so|76d6d5f9e89d896665fdd06cbede3e21c92c8068
-vendor/lib64/libadreno_utils.so|db15cf1f9edafe62a36b1dbb79ad45e56220dcd4
+vendor/lib64/libadreno_utils.so|45ab827fd9ecf4c088237a020b075688f0d0047c
 vendor/lib64/libc2d30_bltlib.so|da219e655056ca4a765ce3f6cf2b992d75088269
-vendor/lib64/libgsl.so|c9f0c740054d1360c2e59af32725ed16f239155d
-vendor/lib64/libllvm-glnext.so|10ce1497960c732b8077cc1bd42e3d8dba96e943
+vendor/lib64/libgsl.so|901a12b69b344c313263ac67d5cf12cd6ef0eb63
+vendor/lib64/libllvm-glnext.so|da4e23a08f6cd7ad933add387b624c6c868fef6c
 vendor/lib64/libllvm-qcom.so|01c37f8efc8362168666fc811082dbbee14fbcbd
 
 # Graphics firmware
@@ -1285,7 +1285,7 @@ vendor/lib64/libOmxMpeghEncSw.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxWmaDec.so
 
-# Pasrmanager - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+# Pasrmanager - from LA.UM.9.14.r1-21000-LAHAINA.QSSI12.0
 -vendor/app/pasrservice/pasrservice.apk|38dec995caf51b42550fded391b31f62f974d621
 vendor/bin/hw/vendor.qti.memory.pasrmanager@1.0-service|7cc40e613dff04728db3a6a7302f535a92da055e
 vendor/etc/init/vendor.qti.memory.pasrmanager@1.0-service.rc|0392c66c185676fe4405e170338c8222f223b825
@@ -1296,7 +1296,7 @@ vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so|fc3c761b2654b83a4216eadf8dc869
 vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so|db794e0ba79fd310a8427cbcae03be05008c429f
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|6b5a8ca7b57e6515882dab290028c766b7bbaa41
 
-# Perf - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+# Perf - from LA.UM.9.14.r1-21000-LAHAINA.QSSI12.0
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|d7dc9aa34d48ed62f469a89bb84554cbc72f44aa
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
 vendor/etc/perf/commonresourceconfigs.xml|c03bd36054bb5d327ad12dc711b58b3f658d261c
@@ -1326,12 +1326,12 @@ vendor/lib64/libqti-perfd-client.so|5bf60caf4d1827cb0f4d1b23df8c19c15034a14a
 vendor/lib64/libqti-perfd.so|c813df3f3b9e29cec8a3ff09e43b9afc5985d050
 vendor/lib64/libqti-util.so|edfedf2e31f21eaa43914bf3cd9c81c5437a99a3
 vendor/lib64/libqti-utils.so|1c9a0cb92802ba2314dafbe0152a7568323fff06
-vendor/lib64/libskewknob.so|f25b655771a47cc11466e7ab9437fc0b3753a558
+vendor/lib64/libskewknob.so|e966e2ad8b0e92ff8416d6b2f771ba0a74f0f8b8
 vendor/lib64/vendor.qti.hardware.perf@2.0.so|9633d7188e3179017fdbc60e09b654d39822c1ad
 vendor/lib64/vendor.qti.hardware.perf@2.1.so|10cd89e4fb77fcb82b2019303c3b97fb7e09e29c
 vendor/lib64/vendor.qti.hardware.perf@2.2.so|86c815d8713e6e411ae22e7fba451a292345d6b1
 
-# Perf LM - from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0
+# Perf LM - from LA.UM.9.14.r1-21000-LAHAINA.QSSI12.0
 vendor/etc/lm/prekill/prekill_2GB.data|c731aed560f7a8f0ac077ec989cc9c6e106e4cc5
 vendor/etc/lm/prekill/prekill_4GB.data|d44007e12419b7e433ab26d3534d104fa4a88b72
 vendor/etc/lm/prekill/prekill_6GB.data|dbf72257628f2da4979726b046377673cb33d6e8
