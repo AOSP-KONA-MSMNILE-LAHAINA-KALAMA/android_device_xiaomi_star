@@ -24,6 +24,13 @@ $(call inherit-product-if-exists, vendor/xiaomi/star-miuicamera/products/miuicam
 
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# Next-Gen Assistant
+PRODUCT_PACKAGES += \
+    NgaResources
+
+PRODUCT_PACKAGES += \
+    nga
+
 PRODUCT_NAME := aosp_star
 PRODUCT_DEVICE := star
 PRODUCT_BRAND := Xiaomi
