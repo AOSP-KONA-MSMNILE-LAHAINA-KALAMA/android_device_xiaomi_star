@@ -117,6 +117,15 @@ BOOT_KERNEL_MODULES := \
 
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 
+# LiveDisplay
+ifneq ("$(wildcard hardware/lineage/livedisplay)", "")
+SOONG_CONFIG_NAMESPACES += livedisplay
+SOONG_CONFIG_livedisplay += enabled
+SOONG_CONFIG_livedisplay_enabled := true
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/configs/vintf/manifest_lineage.xml
+endif
+
 # NFC
 TARGET_USES_NQ_NFC := true
 
