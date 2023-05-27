@@ -1,18 +1,19 @@
+
 on property:vendor.post_boot.parsed=1
-# IRQ Tuning
-# IRQ 70: msm_drm0
-# IRQ 222: kgsl_3d0_irq
-write /proc/irq/70/smp_affinity_list 2
-write /proc/irq/222/smp_affinity_list 1
+    # IRQ Tuning
+    # IRQ 70: msm_drm0
+    # IRQ 222: kgsl_3d0_irq
+    write /proc/irq/70/smp_affinity_list 2
+    write /proc/irq/222/smp_affinity_list 1
 
-# CPUFreq
-write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
-write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
-write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us 500
-write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us 20000
-write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us 500
-write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us 20000
+    # CPUFreq
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
+    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us 20000
+    write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us 20000
 
-# CPUSets
-setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
-setprop dalvik.vm.dex2oat-threads 6
+    # CPUSets
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
+    setprop dalvik.vm.dex2oat-threads 6
