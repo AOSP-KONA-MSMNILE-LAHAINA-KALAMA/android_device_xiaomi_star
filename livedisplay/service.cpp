@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.lineage.livedisplay@2.0-service.star"
+#define LOG_TAG "vendor.lineage.livedisplay@2.1-service.star"
 
 #include <android-base/logging.h>
 #include <binder/ProcessState.h>
@@ -27,8 +27,8 @@ using android::OK;
 using android::sp;
 using android::status_t;
 
-using ::vendor::lineage::livedisplay::V2_0::ISunlightEnhancement;
-using ::vendor::lineage::livedisplay::V2_0::implementation::SunlightEnhancement;
+using ::vendor::lineage::livedisplay::V2_1::ISunlightEnhancement;
+using ::vendor::lineage::livedisplay::V2_1::implementation::SunlightEnhancement;
 using ::vendor::lineage::livedisplay::V2_0::sdm::SDMController;
 
 int main() {
