@@ -340,6 +340,10 @@ PRODUCT_PACKAGES += \
     SettingsResStar \
     SystemUIResStar
 
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Platform
 PRODUCT_BOARD_PLATFORM := lahaina
 TARGET_BOARD_PLATFORM := lahaina

@@ -1,6 +1,15 @@
 on init
     copy_per_line /dev/cpuctl/tasks /dev/cpuctl/system/tasks
 
+on boot
+    # DC-Dimming node
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_exposure
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_exposure
+
+    # High Brightness node
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm_enabled
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm_enabled
+
 # Migrate tasks again in case kernel threads are created during boot
 on property:sys.boot_completed=1
     copy_per_line /dev/cpuctl/tasks /dev/cpuctl/system/tasks
