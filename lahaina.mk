@@ -139,14 +139,6 @@ include vendor/qcom/opensource/commonsys-intf/display/config/display-product-sys
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/display_id_4630946736638489730.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_4630946736638489730.xml
 
-# Dirac
-PRODUCT_PACKAGES += \
-    Dirac
-
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \

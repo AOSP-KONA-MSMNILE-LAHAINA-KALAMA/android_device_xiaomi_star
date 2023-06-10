@@ -1,8 +1,0 @@
-type doze_app, domain;
-
-allow doze_app vendor_sysfs_graphics:dir search;
-allow doze_app vendor_sysfs_graphics:file rw_file_perms;
-
-allow doze_app vendor_sysfs_kgsl:dir search;
-
-allow doze_app vendor_sysfs_kgsl:{ file lnk_file } rw_file_perms;
