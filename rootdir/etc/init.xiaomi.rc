@@ -8,7 +8,9 @@ on boot
 
     # High Brightness node
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm_enabled
+    chown system system /sys/class/backlight/panel0-backlight/brightness
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm_enabled
+    chmod 0660 /sys/class/backlight/panel0-backlight/brightness
 
 # Migrate tasks again in case kernel threads are created during boot
 on property:sys.boot_completed=1

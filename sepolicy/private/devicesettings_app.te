@@ -20,6 +20,12 @@ binder_call(devicesettings_app, gpuservice)
 
 # Allow devicesettings_app to read and write to cgroup/sysfs_leds/sysfs_thermal
 allow devicesettings_app sysfs_leds:dir search;
+
+# Allow it to rw to sysfs_dm
+allow devicesettings_app {
+    sysfs_dm
+}:{ file lnk_file } rw_file_perms;
+
 #allow devicesettings_app vendor_sysfs_graphics:dir search;
 allow devicesettings_app {
   cgroup
