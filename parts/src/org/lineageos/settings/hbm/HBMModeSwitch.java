@@ -58,7 +58,7 @@ public class HBMModeSwitch implements OnPreferenceChangeListener {
     	if (dcDimmingEnabled) {
             return false;
         }
-        FileUtils.writeLine(getHBM(), enabled ? "0x10000" : "0xF0000");
+        FileUtils.writeLine(getHBM(), enabled ? "1" : "0");
         if (enabled && DisplayUtils.isAutoBrightnessEnabled(mContext.getContentResolver())) {
             FileUtils.writeLine(getBACKLIGHT(), "2047");
             Settings.System.putInt(mContext.getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, 255);

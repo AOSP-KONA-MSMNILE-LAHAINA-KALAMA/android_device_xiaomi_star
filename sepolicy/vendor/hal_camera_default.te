@@ -19,4 +19,6 @@ allow hal_camera_default stmvl53l5_device:chr_file { ioctl read write open };
 allow hal_camera_default public_adsprpcd_file:file r_file_perms;
 allow hal_camera_default vendor_xdsp_device:chr_file r_file_perms;
 
+r_dir_file(hal_camera_default, vendor_persist_sensors_file)
+
 vendor_public_prop(vendor_camera_sensor_prop)

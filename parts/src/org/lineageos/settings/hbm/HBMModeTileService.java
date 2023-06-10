@@ -92,7 +92,7 @@ public class HBMModeTileService extends TileService {
             return;
         }
         final boolean enabled = !(sharedPrefs.getBoolean(HBM_KEY, false));
-        FileUtils.writeLine(HBM, enabled ? "0x10000" : "0xF0000");
+        FileUtils.writeLine(HBM, enabled ? "1" : "0");
         if (enabled && DisplayUtils.isAutoBrightnessEnabled(getContentResolver())) {
             FileUtils.writeLine(BACKLIGHT, "2047");
             Settings.System.putInt(getContentResolver(), Settings.System.SCREEN_BRIGHTNESS, 255);

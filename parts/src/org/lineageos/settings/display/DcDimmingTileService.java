@@ -64,7 +64,7 @@ public class DcDimmingTileService extends TileService {
 
     private void disableHBM() {
         // Disable HBM mode
-        FileUtils.writeLine(HBM, "0xF0000");
+        FileUtils.writeLine(HBM, "0");
         // Make HBM mode path read-only
         hbmFile.setReadOnly();
         // Update HBM mode UI tile
