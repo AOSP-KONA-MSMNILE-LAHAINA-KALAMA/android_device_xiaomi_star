@@ -1,4 +1,3 @@
-type dirac_app, domain;
 app_domain(dirac_app)
 
 allow dirac_app {
