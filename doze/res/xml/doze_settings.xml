@@ -40,14 +40,6 @@
         android:title="@string/wake_gesture_title"
         android:summary="@string/wake_gesture_summary" />
 
-    <ListPreference
-        android:key="doze_brightness"
-        android:defaultValue="0"
-        android:title="@string/doze_brightness_title"
-        android:summary="@string/doze_brightness_summary"
-        android:entries="@array/doze_brightness_level"
-        android:entryValues="@array/doze_brightness_level_mode" />
-
     <PreferenceCategory
         android:key="pickup_sensor"
         android:title="@string/pickup_sensor_title">
