@@ -171,6 +171,9 @@ debug.stagefright.omx_default_rank=0
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.config.vc_call_vol_steps=11
 
+# MGLRU (Multi-gen LRU)
+persist.device_config.mglru_native.lru_gen_config=core
+
 # Netflix
 ro.netflix.bsp_rev=Q875-32408-1
 
