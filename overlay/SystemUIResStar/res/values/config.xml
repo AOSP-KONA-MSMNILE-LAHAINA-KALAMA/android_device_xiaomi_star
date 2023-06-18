@@ -33,7 +33,7 @@
     <bool name="config_roundedCornerMultipleRadius">true</bool>
 
     <!-- The radius of the enrollment progress bar, in dp -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">137</integer>
+    <integer name="config_udfpsEnrollProgressBar" translatable="false">142</integer>
 
     <!-- Location on the screen of the center of the physical power button. -->
     <dimen name="physical_power_button_center_screen_location_y">1380px</dimen>
