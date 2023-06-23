@@ -820,7 +820,7 @@ int loc_read_process_conf(const char* conf_file_name, uint32_t * process_count_p
             continue;
         }
 
-        if (strcmp(conf.proc_name, "xtra-daemon") == 0 && !isXtraDaemonEnabled()) {
+	if (strcmp(conf.proc_name, "xtra-daemon") == 0 && !isXtraDaemonEnabled()) {
             LOC_LOGE("%s:%d]: Process xtra-daemon is disabled via property",
                      __func__, __LINE__);
             child_proc[j].proc_status = DISABLED_FROM_CONF;
