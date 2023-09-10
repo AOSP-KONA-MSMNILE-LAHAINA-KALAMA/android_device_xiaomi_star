@@ -1202,6 +1202,7 @@ vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
 
 # NFC
 vendor/lib/libsn100u_fw.so
+vendor/lib64/se_nq_extn_client.so
 
 # NFC configs
 vendor/etc/libnfc-nci.conf
