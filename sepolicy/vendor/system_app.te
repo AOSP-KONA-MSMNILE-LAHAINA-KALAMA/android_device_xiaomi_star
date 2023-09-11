@@ -1,5 +1,6 @@
 allow system_app sysfs_zram:dir { search };
 allow system_app sysfs_zram:file { read };
+get_prop(system_app, qemu_hw_prop)
 
 # Aware
 get_prop(system_app, vendor_aware_available_prop);
