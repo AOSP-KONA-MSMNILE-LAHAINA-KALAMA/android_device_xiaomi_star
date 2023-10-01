@@ -785,6 +785,9 @@ vendor/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml
 # Display calibration - from LA.UM.9.14.r1-21000-LAHAINA.QSSI12.0
 vendor/etc/display/advanced_sf_offsets.xml|e145a0c0f975f6d924fbe7f18f531ae044ec3bef
 
+# Display config
+product/etc/displayconfig/display_id_4630946736638489730.xml:vendor/etc/displayconfig/display_id_4630946736638489730.xml
+
 # Display gralloc - from LA.UM.9.14.r1-21000-LAHAINA.QSSI12.0
 vendor/lib64/libgralloccore.so|3f9a1e2d36a9221b078927327c328bfa3185d973
 vendor/lib64/libgrallocutils.so|0bafbd7b7de5f267c4f5836acb4be174b2870ccd
