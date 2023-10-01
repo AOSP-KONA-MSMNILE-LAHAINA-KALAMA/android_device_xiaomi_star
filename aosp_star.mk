@@ -23,6 +23,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/star-miuicamera/products/miuicamera.mk)
 
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT = true
 
 # Next-Gen Assistant
 PRODUCT_PACKAGES += \
