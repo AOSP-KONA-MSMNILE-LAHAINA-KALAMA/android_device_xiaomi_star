@@ -1,1 +1,1 @@
-allow vendor_hal_esepowermanager_qti ion_device:chr_file { read };
+allow vendor_hal_esepowermanager_qti ion_device:chr_file { open read ioctl };

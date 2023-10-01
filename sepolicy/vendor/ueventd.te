@@ -1,0 +1,1 @@
+allow ueventd vendor_sysfs_audio:chr_file { create };

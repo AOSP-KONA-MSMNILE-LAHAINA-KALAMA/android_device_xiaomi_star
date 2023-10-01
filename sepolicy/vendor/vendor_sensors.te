@@ -1,1 +1,1 @@
-allow vendor_sensors sysfs:file { read };
+allow vendor_sensors sysfs:file { open read getattr };
