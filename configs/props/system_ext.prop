@@ -19,12 +19,5 @@ bluetooth.profile.pbap.server.enabled=true
 ro.sensor.pickup=xiaomi.sensor.pickup
 ro.sensor.pickup.lower.value=2
 
-# DPM
-persist.vendor.dpm.feature=11
-
 # Media
 vendor.media.target_variant=_lahaina
-
-# Telephony
-ro.telephony.sim_slots.count=2
-telephony.active_modems.max_count=2
