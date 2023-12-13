@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2023 Paranoid Android
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -126,7 +126,7 @@ BOARD_RAMDISK_USE_LZ4 := true
 KERNEL_LD := LD=ld.lld
 
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
-
+TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := vendor/star-qgki_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350
 
