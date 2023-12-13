@@ -128,12 +128,6 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
     libcodec2_vndk.vendor
 
-# Display
--include hardware/qcom-caf/sm8350/display/config/display-board.mk
--include hardware/qcom-caf/sm8350/display/config/display-product.mk
-include vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk
-include vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk
-
 # Dirac
 PRODUCT_PACKAGES += \
     Dirac
@@ -372,6 +366,7 @@ PRODUCT_PACKAGES += \
 
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
+    display \
     perf
 
 # Radio
