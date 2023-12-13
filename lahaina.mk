@@ -289,7 +289,6 @@ PRODUCT_COPY_FILES += \
 
 # Minijail
 PRODUCT_PACKAGES += \
-    libavservices_minijail \
     libavservices_minijail.vendor
 
 # Netd
@@ -372,6 +371,7 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
 
 TARGET_COMMON_QTI_COMPONENTS := \
+    av \
     perf
 
 # Radio
