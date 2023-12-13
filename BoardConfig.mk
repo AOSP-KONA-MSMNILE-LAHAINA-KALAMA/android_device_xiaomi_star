@@ -131,15 +131,6 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := vendor/star-qgki_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350
 
-# LiveDisplay
-ifneq ("$(wildcard hardware/lineage/livedisplay)", "")
-SOONG_CONFIG_NAMESPACES += livedisplay
-SOONG_CONFIG_livedisplay += enabled
-SOONG_CONFIG_livedisplay_enabled := true
-DEVICE_MANIFEST_FILE += \
-    $(DEVICE_PATH)/configs/vintf/manifest_lineage.xml
-endif
-
 # NFC
 TARGET_USES_NQ_NFC := true
 
