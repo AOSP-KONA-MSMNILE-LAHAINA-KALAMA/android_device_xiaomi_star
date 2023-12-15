@@ -36,9 +36,6 @@
 # Power
 /dev/xiaomi-touch                                                  u:object_r:vendor_touchfeature_device:s0
 
-# Powershare
-/vendor/bin/hw/vendor\.lineage\.powershare@1\.0-service\.star                           u:object_r:hal_lineage_powershare_default_exec:s0
-
 # Sensors
 /sys/bus/iio/devices                                                                                                            u:object_r:vendor_sysfs_iio:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/mi_display/disp-DSI-0/dynamic_fps                                        u:object_r:vendor_sysfs_graphics:s0
