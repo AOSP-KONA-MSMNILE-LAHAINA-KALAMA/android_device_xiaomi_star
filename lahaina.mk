@@ -231,6 +231,7 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1 \
     android.hardware.keymaster@4.1.vendor
 
 # Media
@@ -409,6 +410,9 @@ $(call inherit-product, hardware/xiaomi/aidl/vibrator/vibrator-vendor-product.mk
 
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-V1-ndk_platform.vendor
+
+# VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
 # Vulkan
 PRODUCT_COPY_FILES += \
