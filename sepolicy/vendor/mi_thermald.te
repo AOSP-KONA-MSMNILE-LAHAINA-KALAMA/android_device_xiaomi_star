@@ -1,5 +1,3 @@
-type mi_thermald, domain;
-type mi_thermald_exec, exec_type, vendor_file_type, file_type;
 type thermal_data_file, data_file_type, file_type;
 
 init_daemon_domain(mi_thermald)
