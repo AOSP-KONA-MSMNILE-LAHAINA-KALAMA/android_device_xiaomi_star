@@ -779,6 +779,9 @@ vendor/etc/mdss_dsi_k2_38_08_0a_dsc_cmd_mi.xml
 vendor/etc/mdss_dsi_k2_38_08_0a_mp_dsc_cmd_mi.xml
 vendor/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml
 
+# Display config
+product/etc/displayconfig/display_id_4630946736638489730.xml:vendor/etc/displayconfig/display_id_4630946736638489730.xml
+
 # DPM
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc

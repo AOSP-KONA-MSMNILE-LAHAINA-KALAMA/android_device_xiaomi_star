@@ -126,10 +126,6 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
     libcodec2_vndk.vendor
 
-# Display Device Config
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display/display_id_4630946736638489730.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_4630946736638489730.xml
-
 # Dirac
 PRODUCT_PACKAGES += \
     Dirac
