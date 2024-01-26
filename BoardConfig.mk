@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2022 Project 404
+# Copyright (C) 2024 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -104,7 +105,6 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_COMPILE_WITH_MSM_KERNEL := true
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350
 KERNEL_DEFCONFIG := vendor/star-qgki_defconfig
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
