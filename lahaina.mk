@@ -275,6 +275,7 @@ PRODUCT_PACKAGES += \
     WifiResCommon
 
 PRODUCT_PACKAGES += \
+    AOSPAStarFrameworks \
     FrameworksResStar \
     AOSPAStarSystemUI \
     SettingsProviderOverlayStar \
