@@ -1458,6 +1458,8 @@ vendor/lib64/vl53l5.hal@1.0.so
 vendor/lib64/vl53l5.hal@2.0.so
 
 # Touchscreen firmware
+vendor/firmware/st_fts_k2.ftb:vendor_ramdisk/lib/firmware/st_fts_k2.ftb
+vendor/firmware/st_fts_k2_htp.ftb:vendor_ramdisk/lib/firmware/st_fts_k2_htp.ftb
 vendor/firmware/st_fts_k2.ftb
 vendor/firmware/st_fts_k2_htp.ftb
 
