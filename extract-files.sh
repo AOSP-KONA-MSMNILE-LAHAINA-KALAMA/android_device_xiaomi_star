@@ -80,6 +80,9 @@ function blob_fixup() {
             hexdump -ve '1/1 "%.2X"' "${2}" | sed "s/5E070094881640F9/1F2003D5881640F9/g; s/AA060094881640F9/1F2003D5881640F9/g" | xxd -r -p > "${EXTRACT_TMP_DIR}/${1##*/}"
             mv "${EXTRACT_TMP_DIR}/${1##*/}" "${2}"
             ;;
+        vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc)
+            sed -i 's/group system input/group system input\n    task_profiles ServiceCapacityLow/' "${2}"
+            ;;
     esac
 }
 
