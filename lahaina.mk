@@ -278,6 +278,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
+# PowerShare
+PRODUCT_PACKAGES += \
+    vendor.aospa.powershare-service
+
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
