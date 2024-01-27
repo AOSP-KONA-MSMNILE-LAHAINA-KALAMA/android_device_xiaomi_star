@@ -225,6 +225,9 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/double_tap"
 
+# PowerShare
+TARGET_POWERSHARE_NODE := /sys/class/qcom-battery/reverse_chg_mode
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/configs/props/odm.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
