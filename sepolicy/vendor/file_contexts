@@ -1,7 +1,9 @@
 # Audio
-/dev/socket/audio_hw_socket                                             u:object_r:audio_socket:s0
+/dev/socket/audio_hw_socket           u:object_r:audio_socket:s0
 /dev/elliptic(.*)?                    u:object_r:sound_device:s0
 /dev/mius(.*)?                        u:object_r:sound_device:s0
+/dev/msm_audio_cal                    u:object_r:vendor_sysfs_audio:s0
+/dev/msm_rtac                         u:object_r:vendor_sysfs_audio:s0
 
 # Battery
 /vendor/bin/batteryd		u:object_r:batteryd_exec:s0

@@ -1,5 +1,5 @@
 allow system_app sysfs_zram:dir { search };
-allow system_app sysfs_zram:file { read };
+allow system_app sysfs_zram:file { open read };
 
 # Aware
 get_prop(system_app, vendor_aware_available_prop);
