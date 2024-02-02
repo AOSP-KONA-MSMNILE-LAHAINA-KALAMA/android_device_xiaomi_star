@@ -299,6 +299,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     nfc \
     perf \
     telephony \
+    wlan \
     usb
 
 # Radio
@@ -378,14 +379,7 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi-service \
-    hostapd \
-    libwifi-hal-qcom \
-    libwpa_client \
-    WifiOverlay \
-    wpa_cli \
-    wpa_supplicant \
-    wpa_supplicant.conf
+    WifiOverlay
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
