@@ -8,9 +8,6 @@ persist.vendor.btstack.enable.twsplussho=true
 ro.bluetooth.library_name=libbluetooth_qti.so
 vendor.bluetooth.soc=hastings
 
-# Charger
-ro.charger.enable_suspend=true
-
 # Display
 debug.gralloc.gfx_ubwc_disable=0
 debug.sf.enable_hwc_vds=1

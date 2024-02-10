@@ -83,6 +83,9 @@ function blob_fixup() {
         vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc)
             sed -i 's/group system input/group system input\n    task_profiles ServiceCapacityLow/' "${2}"
             ;;
+        vendor/etc/init/hw/init.batterysecret.rc|vendor/etc/init/hw/init.mi_thermald.rc)
+            sed -i 's/on charger/on property:init.svc.vendor.charger=running/' "${2}"
+            ;;
     esac
 }
 
