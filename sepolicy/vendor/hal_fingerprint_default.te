@@ -6,6 +6,12 @@ type vendor_sysfs_fod, sysfs_type, fs_type;
 
 vendor_public_prop(vendor_fp_prop)
 
+# Allow access to the HALs
+hal_client_domain(hal_fingerprint_default, hal_power)
+
+# Allow binder communication with hal_power_default
+binder_call(hal_fingerprint_default, hal_power_default)
+
 # Binder
 add_hwservice(hal_fingerprint_default, vendor_hal_fingerprint_hwservice_xiaomi)
 allow hal_fingerprint_default vendor_hal_perf_default:binder call;
