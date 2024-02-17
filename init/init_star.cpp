@@ -88,16 +88,16 @@ void vendor_load_properties() {
         model = "M2102K1AC";
         brand = "Xiaomi";
         device = "mars";
-        fingerprint = "Xiaomi/mars/mars:13/TKQ1.220829.002/V14.0.23.5.15.DEV:user/release-keys";
-        description = "mars-user 13 TKQ1.220829.002 V14.0.23.5.15.DEV release-keys";
+        fingerprint = "Xiaomi/mars/mars:13/RKQ1.211001.001/V14.0.13.0.TKACNXM:user/release-keys";
+        description = "mars-user 13 RKQ1.211001.001 V14.0.13.0.TKACNXM release-keys";
         marketname = "Mi 11 Pro";
         mod_device = "mars_global";
     } else {
         model = "M2102K1C";
         brand = "Xiaomi";
         device = "star";
-        fingerprint = "Xiaomi/star/star:13/TKQ1.220829.002/V14.0.23.5.15.DEV:user/release-keys";
-        description = "star-user 13 TKQ1.220829.002 V14.0.23.5.15.DEV release-keys";
+        fingerprint = "Xiaomi/star/star:13/RKQ1.211001.001/V14.0.13.0.TKACNXM:user/release-keys";
+        description = "star-user 13 RKQ1.211001.001 V14.0.13.0.TKACNXM release-keys";
         marketname = "Mi 11 Ultra";
         mod_device = "star_global";
     }
