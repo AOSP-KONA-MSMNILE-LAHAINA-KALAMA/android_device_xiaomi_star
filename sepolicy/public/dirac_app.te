@@ -1,2 +1,0 @@
-type dirac_app, domain;
-typeattribute dirac_app mlstrustedsubject;

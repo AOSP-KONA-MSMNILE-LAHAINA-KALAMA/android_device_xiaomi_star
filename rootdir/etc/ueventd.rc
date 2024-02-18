@@ -143,3 +143,6 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # Charger
 /sys/class/qcom-battery     input_suspend               0660    system  system
+
+# Display
+/sys/devices/platform/soc/soc:qcom,dsi-display-primary  hbm_enabled 0666  system  system

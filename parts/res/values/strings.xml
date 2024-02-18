@@ -15,6 +15,8 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Application title -->
+    <string name="device_settings_app_name">Device features</string>
 
     <!-- Dirac settings -->
     <string name="dirac_enable">Enable dirac</string>
@@ -67,5 +69,14 @@
     <string name="dirac_headset_scenario_music">Music</string>
     <string name="dirac_headset_scenario_video">Video</string>
     <string name="dirac_headset_scenario_vocal">Voice</string>
+
+    <!-- HBM settings -->
+    <string name="hbm_fragment_title">High brightness mode</string>
+    <string name="hbm_fragment_summary">Settings for HBM</string>
+    <string name="hbm_mode_title">HBM</string>
+    <string name="hbm_mode_summary">Enable peak luminance</string>
+    <string name="auto_hbm_title">Automatic HBM</string>
+    <string name="auto_hbm_summary">Enable peak luminance based on sunlight</string>
+    <string name="hbm_mode_warning">Long time usage of High brightness mode may damage your display</string>
 
 </resources>
