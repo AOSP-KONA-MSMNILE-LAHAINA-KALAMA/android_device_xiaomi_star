@@ -62,6 +62,10 @@ TARGET_NO_BOOTLOADER := true
 TARGET_USES_QTI_CAMERA_DEVICE := true
 
 # Display
+SOONG_CONFIG_NAMESPACES += dolby_vision
+SOONG_CONFIG_dolby_vision += enabled
+SOONG_CONFIG_dolby_vision_enabled := true
+
 TARGET_SCREEN_DENSITY := 560
 
 # Filesystem
