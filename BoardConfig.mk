@@ -100,7 +100,6 @@ BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
-TARGET_KERNEL_CLANG_COMPILE := true
 KERNEL_DEFCONFIG := vendor/star-qgki_defconfig
 
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
