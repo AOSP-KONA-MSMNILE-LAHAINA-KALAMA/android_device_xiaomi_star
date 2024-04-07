@@ -38,6 +38,8 @@ BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 
 # Audio
+TARGET_LOOP_COMPRESS_READ := true
+
 PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
