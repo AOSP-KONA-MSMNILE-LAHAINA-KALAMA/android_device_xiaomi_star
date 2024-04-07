@@ -1,7 +1,6 @@
-service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.star
-    class late_start
-    user system
-    group system input uhid
+# Copyright (C) 2024 Paranoid Android
+#
+# SPDX-License-Identifier: Apache-2.0
 
 on init
     chmod 0666 /dev/goodix_fp
@@ -13,8 +12,6 @@ on boot
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_hbm
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui
     chown system system /sys/devices/virtual/touch/tp_dev/fod_status
-
-    write /sys/devices/virtual/touch/tp_dev/fod_status 1
 
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/irq
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/irq_enable
