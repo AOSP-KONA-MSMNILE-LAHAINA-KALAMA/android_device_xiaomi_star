@@ -86,6 +86,9 @@ function blob_fixup() {
         vendor/etc/init/hw/init.batterysecret.rc|vendor/etc/init/hw/init.mi_thermald.rc)
             sed -i 's/on charger/on property:init.svc.vendor.charger=running/' "${2}"
             ;;
+        vendor/etc/sensors/hals.conf)
+            sed -i '$a sensors.xiaomi.so' "${2}"
+            ;;
     esac
 }
 

@@ -475,6 +475,9 @@
         <item>132</item>   <!-- <item>sensorRadius</item> -->
     </integer-array>
 
+    <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
+    <string name="config_dozeUdfpsLongPressSensorType" translatable="false">co.aospa.sensor.udfps</string>
+
     <!-- Vibrator pattern for feedback about a long screen/key press. -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
