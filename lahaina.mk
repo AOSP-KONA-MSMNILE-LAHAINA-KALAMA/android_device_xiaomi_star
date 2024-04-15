@@ -109,6 +109,8 @@ PRODUCT_PACKAGES_DEBUG += \
 # Camera
 PRODUCT_PACKAGES += \
     Camera2 \
+    android.hardware.camera.provider@2.4-external \
+    android.hardware.camera.provider@2.4-legacy \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
     libgui_vendor \

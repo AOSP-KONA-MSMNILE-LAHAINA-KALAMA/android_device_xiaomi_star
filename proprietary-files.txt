@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from star V14.0.13.0.TKACNXM
+# All unpinned blobs below are extracted from star UKQ1.231207.002-V816.0.2.0.UKACNXM
 
 # ACDB
 vendor/etc/acdbdata/Tutu/mars/Tutu_Bluetooth_cal_mars.acdb
@@ -177,6 +177,8 @@ vendor/lib64/libjnihelper.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # Camera
+vendor/bin/hw/android.hardware.camera.provider@2.4-virtual-camera-service
+vendor/etc/init/android.hardware.camera.provider@2.4-virtual-camera-service.rc
 vendor/lib64/camera/com.qti.eeprom.mars_ofilm_ov13b10_p24c64f_ultra_eeprom.so
 vendor/lib64/camera/com.qti.eeprom.mars_semco_s5kgn2_p24c128e_eeprom.so
 vendor/lib64/camera/com.qti.eeprom.mars_sunny_ov08a10_gt24p128c_tele5x_eeprom.so
@@ -214,6 +216,7 @@ vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl-vcamera.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/camera.xiaomi.so
 vendor/lib64/hw/com.qti.chi.override.so
@@ -995,20 +998,44 @@ vendor/etc/media_profiles_vendor.xml
 
 # Media (Dolby Vision)
 vendor/bin/hw/dolbycodec2
-vendor/etc/init/dolbycodec2.rc
+vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
 vendor/etc/dolby_vision.cfg
-vendor/lib/c2.dolby.avc.dec.so
-vendor/lib/c2.dolby.avc.sec.dec.so
-vendor/lib/c2.dolby.client.so
-vendor/lib/c2.dolby.egl.so
-vendor/lib/c2.dolby.hevc.dec.so
-vendor/lib/c2.dolby.hevc.sec.dec.so
-vendor/lib/c2.dolby.store.so
-vendor/lib/libdolbyottcameracontrol.so
-vendor/lib/libdovi.so
-vendor/lib/libsfplugin_ccodec_utils.so
+vendor/lib64/c2.dolby.client.so
+vendor/lib64/c2.dolby.hevc.dec.so
+vendor/lib64/c2.dolby.hevc.sec.dec.so
+vendor/lib64/c2.dolby.store.so
+vendor/lib64/libDecoderProcessor.so
+vendor/lib64/libcodec2_soft_common.so
+vendor/lib64/libdolbyottcameracontrol.so
+vendor/lib64/libeglcore.so
+vendor/lib64/libsfplugin_ccodec_utils.so
 
 # Media (VPU firmware)
+vendor/firmware/vpu20_1v.b00
+vendor/firmware/vpu20_1v.b01
+vendor/firmware/vpu20_1v.b02
+vendor/firmware/vpu20_1v.b03
+vendor/firmware/vpu20_1v.b04
+vendor/firmware/vpu20_1v.b05
+vendor/firmware/vpu20_1v.b06
+vendor/firmware/vpu20_1v.b07
+vendor/firmware/vpu20_1v.b08
+vendor/firmware/vpu20_1v.b09
+vendor/firmware/vpu20_1v.b10
+vendor/firmware/vpu20_1v.b11
+vendor/firmware/vpu20_1v.b12
+vendor/firmware/vpu20_1v.b13
+vendor/firmware/vpu20_1v.b14
+vendor/firmware/vpu20_1v.b15
+vendor/firmware/vpu20_1v.b16
+vendor/firmware/vpu20_1v.b17
+vendor/firmware/vpu20_1v.b18
+vendor/firmware/vpu20_1v.b19
+vendor/firmware/vpu20_1v.elf
+vendor/firmware/vpu20_1v.lst
+vendor/firmware/vpu20_1v.mbn
+vendor/firmware/vpu20_1v.mdt
+vendor/firmware/vpu20_1v_unsigned.mbn
 vendor/firmware/vpu20_2v.b00
 vendor/firmware/vpu20_2v.b01
 vendor/firmware/vpu20_2v.b02
@@ -1052,6 +1079,8 @@ vendor/firmware/vpu20_4v.b16
 vendor/firmware/vpu20_4v.b17
 vendor/firmware/vpu20_4v.b18
 vendor/firmware/vpu20_4v.b19
+vendor/firmware/vpu20_4v.elf
+vendor/firmware/vpu20_4v.lst
 vendor/firmware/vpu20_4v.mbn
 vendor/firmware/vpu20_4v.mdt
 vendor/firmware/vpu20_4v_unsigned.mbn
@@ -1128,7 +1157,7 @@ vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
 # Power-off alarm
--product/app/PowerOffAlarm/PowerOffAlarm.apk
+-system_ext/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
 vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
@@ -1150,7 +1179,6 @@ system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so
-system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 vendor/bin/qcc-trd

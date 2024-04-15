@@ -11,6 +11,7 @@
 /mnt/vendor/persist/subsys(/.*)?                u:object_r:persist_subsys_file:s0
 
 # Camera
+/vendor/bin/hw/android\.hardware\.camera\.provider@2\.4-virtual-camera-service                u:object_r:hal_camera_default_exec:s0
 /mnt/vendor/persist/camera(/.*)?   u:object_r:camera_persist_file:s0
 
 # Hexagon DSP-side executable needed for Halide operation
