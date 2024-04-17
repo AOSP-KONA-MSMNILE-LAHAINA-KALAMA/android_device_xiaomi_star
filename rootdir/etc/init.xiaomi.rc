@@ -1,4 +1,7 @@
 on init
+    # Samsung Generic I/O Scheduler
+    write /dev/blkio/background/blkio.ssg.max_available_ratio 25
+
     copy_per_line /dev/cpuctl/tasks /dev/cpuctl/system/tasks
 
     chown cameraserver cameraserver /dev/cpuctl/camera-daemon/cpu.shares
