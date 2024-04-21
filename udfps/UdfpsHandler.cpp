@@ -1,13 +1,13 @@
 /*
  * Copyright (C) 2022 The LineageOS Project
+ * Copyright (C) 2024 Paranoid Android
  *
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "UdfpsHandler.xiaomi_sm8350"
+#define LOG_TAG "UdfpsHandler.star"
 
 #include <android-base/logging.h>
-
 #include <fcntl.h>
 #include <fstream>
 #include <poll.h>
@@ -20,15 +20,16 @@
 #define PARAM_NIT_UDFPS 1
 #define PARAM_NIT_NONE 0
 
-// Touchscreen and HBM
-#define FOD_HBM_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_hbm"
 #define FOD_STATUS_PATH "/sys/devices/virtual/touch/tp_dev/fod_status"
-#define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
-
-#define FOD_HBM_OFF 0
-#define FOD_HBM_ON 1
-#define FOD_STATUS_OFF 0
 #define FOD_STATUS_ON 1
+#define FOD_STATUS_OFF 0
+
+#define FOD_UI_PATH "/sys/devices/virtual/mi_display/disp_feature/disp-DSI-0/fod_ui"
+
+#define DISP_PARAM_PATH "/sys/devices/virtual/mi_display/disp_feature/disp-DSI-0/disp_param"
+#define DISP_PARAM_LOCAL_HBM_MODE "9"
+#define DISP_PARAM_LOCAL_HBM_OFF "0"
+#define DISP_PARAM_LOCAL_HBM_ON "1"
 
 template <typename T>
 static void set(const std::string& path, const T& value) {
@@ -38,9 +39,7 @@ static void set(const std::string& path, const T& value) {
 
 static bool readBool(int fd) {
     char c;
-    int rc;
-
-    rc = lseek(fd, 0, SEEK_SET);
+    int rc = lseek(fd, 0, SEEK_SET);
     if (rc) {
         LOG(ERROR) << "failed to seek fd, err: " << rc;
         return false;
@@ -55,8 +54,8 @@ static bool readBool(int fd) {
     return c != '0';
 }
 
-class XiaomiUdfpsHander : public UdfpsHandler {
-  public:
+class XiaomiUdfpsHandler : public UdfpsHandler {
+public:
     void init(fingerprint_device_t* device) {
         mDevice = device;
 
@@ -68,9 +67,9 @@ class XiaomiUdfpsHander : public UdfpsHandler {
             }
 
             struct pollfd fodUiPoll = {
-                    .fd = fd,
-                    .events = POLLERR | POLLPRI,
-                    .revents = 0,
+                .fd = fd,
+                .events = POLLERR | POLLPRI,
+                .revents = 0,
             };
 
             while (true) {
@@ -86,16 +85,20 @@ class XiaomiUdfpsHander : public UdfpsHandler {
     }
 
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
-        set(FOD_HBM_PATH, FOD_HBM_ON);
+        set(FOD_STATUS_PATH, FOD_STATUS_ON);
+        mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_UDFPS);
+        set(DISP_PARAM_PATH, std::string(DISP_PARAM_LOCAL_HBM_MODE) + " " + DISP_PARAM_LOCAL_HBM_ON);
     }
 
     void onFingerUp() {
-        set(FOD_HBM_PATH, FOD_HBM_OFF);
+        mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_NONE);
+        set(DISP_PARAM_PATH, std::string(DISP_PARAM_LOCAL_HBM_MODE) + " " + DISP_PARAM_LOCAL_HBM_OFF);
     }
 
     void onAcquired(int32_t result, int32_t vendorCode) {
         if (result == FINGERPRINT_ACQUIRED_GOOD) {
-            set(FOD_HBM_PATH, FOD_HBM_OFF);
+            mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_NONE);
+            set(DISP_PARAM_PATH, std::string(DISP_PARAM_LOCAL_HBM_MODE) + " " + DISP_PARAM_LOCAL_HBM_OFF);
             set(FOD_STATUS_PATH, FOD_STATUS_OFF);
         } else if (vendorCode == 21 || vendorCode == 23) {
             /*
@@ -107,16 +110,17 @@ class XiaomiUdfpsHander : public UdfpsHandler {
     }
 
     void cancel() {
+        mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_UDFPS);
+        set(DISP_PARAM_PATH, std::string(DISP_PARAM_LOCAL_HBM_MODE) + " " + DISP_PARAM_LOCAL_HBM_ON);
         set(FOD_STATUS_PATH, FOD_STATUS_OFF);
-        set(FOD_HBM_PATH, FOD_HBM_OFF);
     }
 
-  private:
+private:
     fingerprint_device_t* mDevice;
 };
 
 static UdfpsHandler* create() {
-    return new XiaomiUdfpsHander();
+    return new XiaomiUdfpsHandler();
 }
 
 static void destroy(UdfpsHandler* handler) {
@@ -124,6 +128,6 @@ static void destroy(UdfpsHandler* handler) {
 }
 
 extern "C" UdfpsHandlerFactory UDFPS_HANDLER_FACTORY = {
-        .create = create,
-        .destroy = destroy,
+    .create = create,
+    .destroy = destroy,
 };
