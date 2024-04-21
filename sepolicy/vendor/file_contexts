@@ -57,8 +57,8 @@
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.dtool@1\.0-service         u:object_r:vendor_dtool_exec:s0
 
 # FOD
-/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_hbm      u:object_r:vendor_sysfs_udfps:s0
-/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui       u:object_r:vendor_sysfs_udfps:s0
+/sys/devices/virtual/mi_display/disp_feature/disp-DSI-0/disp_param      u:object_r:vendor_sysfs_udfps:s0
+/sys/devices/virtual/mi_display/disp_feature/disp-DSI-0/fod_ui       u:object_r:vendor_sysfs_udfps:s0
 /sys/devices/virtual/touch/tp_dev/fod_status                        u:object_r:vendor_sysfs_udfps:s0
 
 # Media

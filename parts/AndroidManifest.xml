@@ -51,38 +51,34 @@
         </activity>
 
         <activity
-            android:name=".hbm.HBMActivity"
+            android:name=".hbm.HbmSettingsActivity"
             android:exported="false"
-            android:label="@string/hbm_fragment_title"
+            android:label="@string/hbm_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
+
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.display" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/hbm_fragment_summary" />
+                android:resource="@string/hbm_summary" />
         </activity>
 
-        <activity 
-            android:name=".hbm.HBMFragment"
-            android:exported="false" />
-
         <service
-            android:name=".hbm.AutoHBMService"
-            android:exported="false" />
-
-        <service
-            android:name=".hbm.HBMModeTileService"
-            android:icon="@drawable/ic_hbm_tile"
-            android:label="@string/hbm_mode_title"
+            android:name=".hbm.HbmTileService"
             android:exported="true"
+            android:icon="@drawable/ic_qs_hbm"
+            android:label="@string/hbm_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
+
+            <meta-data android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+                android:value="true" />
         </service>
 
     </application>

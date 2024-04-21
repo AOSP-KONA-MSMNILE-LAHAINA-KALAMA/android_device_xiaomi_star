@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-     Copyright (C) 2021 The Evolution X Project
-     Copyright (C) 2018-2021 crDroid Android Project
+     Copyright (C) 2024 Paranoid Android
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,25 +14,13 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:settings="http://schemas.android.com/apk/res/org.lineageos.settings.HBMFragment"
-	android.title="@string/hbm_fragment_title">
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/hbm_title">
 
-    <PreferenceCategory>
-        <SwitchPreference
-            android:key="hbm"
-            android:title="@string/hbm_mode_title"
-            android:summary="@string/hbm_mode_summary"
-            android:defaultValue="false" />
-
-        <SwitchPreference
-            android:key="auto_hbm"
-            android:title="@string/auto_hbm_title"
-            android:summary="@string/auto_hbm_summary" />
-
-        <Preference
-            android:icon="@drawable/ic_info_outline"
-            android:summary="@string/hbm_mode_warning" 
-            android:persistent="false" />
-    </PreferenceCategory>
+    <SwitchPreference
+        android:key="hbm"
+        android:defaultValue="false"
+        android:title="@string/hbm_title"
+        android:summary="@string/hbm_summary" />
 </PreferenceScreen>
