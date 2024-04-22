@@ -146,3 +146,4 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # Display
 /sys/devices/virtual/mi_display/disp_feature/disp-DSI-0 disp_param  0666  system  system
+/sys/devices/virtual/touch/touch_dev                    bump_sample_rate  0666  system  system

@@ -75,4 +75,8 @@
     <string name="hbm_summary">Make the screen brighter, which may wrong brightness of the CUP area.</string>
     <string name="hbm_failed">Failed to enable High brightness mode!</string>
 
+    <!-- High touch polling rate -->
+    <string name="touch_polling_rate_title">High touch polling rate</string>
+    <string name="touch_polling_rate_summary">Increase the touch polling rate from 240hz to 480hz to improve the touch follow-through, which may slightly increase power consumption</string>
+
 </resources>

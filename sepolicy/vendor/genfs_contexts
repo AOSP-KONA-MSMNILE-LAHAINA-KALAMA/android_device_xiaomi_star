@@ -15,6 +15,7 @@ genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc u:object_r:vendor_sysfs
 
 # Touch
 genfscon sysfs /touchpanel u:object_r:sysfs_touchpanel:s0
+genfscon sysfs /devices/virtual/touch/touch_dev/bump_sample_rate u:object_r:sysfs_touch_polling_rate:s0
 
 # Wakeup nodes
 genfscon sysfs /devices/platform/goodix_ts.0/wakeup u:object_r:sysfs_wakeup:s0
