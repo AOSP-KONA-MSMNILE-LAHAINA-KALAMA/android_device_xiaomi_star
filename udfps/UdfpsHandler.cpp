@@ -111,7 +111,7 @@ public:
 
     void cancel() {
         mDevice->extCmd(mDevice, COMMAND_NIT, PARAM_NIT_UDFPS);
-        set(DISP_PARAM_PATH, std::string(DISP_PARAM_LOCAL_HBM_MODE) + " " + DISP_PARAM_LOCAL_HBM_ON);
+        set(DISP_PARAM_PATH, std::string(DISP_PARAM_LOCAL_HBM_MODE) + " " + DISP_PARAM_LOCAL_HBM_OFF);
         set(FOD_STATUS_PATH, FOD_STATUS_OFF);
     }
 
